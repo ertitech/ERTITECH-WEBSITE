@@ -1,0 +1,85 @@
+.header-navbar {
+    padding: 20px 10px;
+  }
+  
+  .header-navbar .logo {
+    width: 150px;
+  }
+  
+  .header-navbar .nav-link {
+    color: black;
+    margin-right: 20px;
+    font-size: 17px; /* Default font size */
+  }
+  
+  .header-navbar .sign-in-btn {
+    background: linear-gradient(to right, #e44a20, #6ec13a);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 870px) {
+    .header-navbar .navbar-collapse {
+      justify-content: space-between;
+    }
+    .header-navbar {
+      align-items: center;
+      justify-content: center;
+    }
+    .header-navbar .nav-link {
+      margin: 0 !important;
+      font-size: 16px; /* Font size for smaller screens */
+    }
+  
+    .header-navbar .sign-in-btn {
+      margin-top: 10px; /* Add margin to create space between button and navbar */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header-navbar .nav-link {
+      font-size: 14px; 
+    }
+    .header-navbar {
+        padding: 10px 0px;
+      }
+  }
+
+
+/* Banner Styles */
+.banner-container {
+  height: 150px; /* Fixed height for the container */
+}
+
+.text-container {
+  flex-grow: 1; /* Ensure the text container takes up remaining space */
+  margin-right: 1rem; /* Add margin to the right of the text */
+}
+
+.banner-image {
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  height: 100%; /* Ensure the image container's height matches the parent container */
+}
+
+.banner-image img {
+  max-height: 100%; /* Make sure the image fits within the container's height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 463px) {
+  .banner-image {
+    display: none; /* Hide the image on smaller screens */
+  }
+
+  .text-container {
+    margin-right: 0; /* Remove margin on smaller screens */
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .text-container div {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
