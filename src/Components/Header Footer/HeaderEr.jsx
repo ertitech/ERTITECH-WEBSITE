@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HeaderEr = () => {
   return (
-    <Navbar bg="light" expand="md" className="header-navbar">
+    <Navbar expand="md" className="header-navbar">
       <Container fluid>
         <Navbar.Brand href="#home">
           <img
@@ -16,7 +16,7 @@ const HeaderEr = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center" >
-          <Nav className="mr-auto">
+          <Nav className="mr-auto container-home teal borderYtoX">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
             <Nav.Link href="#products">Products</Nav.Link>

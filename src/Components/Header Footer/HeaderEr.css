@@ -1,3 +1,4 @@
+/* header styles */
 .header-navbar {
     padding: 20px 10px;
   }
@@ -9,7 +10,7 @@
   .header-navbar .nav-link {
     color: black;
     margin-right: 20px;
-    font-size: 17px; /* Default font size */
+    font-size: 17px; 
   }
   
   .header-navbar .sign-in-btn {
@@ -19,7 +20,6 @@
     padding: 10px 20px;
   }
   
-  /* Responsive adjustments */
   @media (max-width: 870px) {
     .header-navbar .navbar-collapse {
       justify-content: space-between;
@@ -30,11 +30,11 @@
     }
     .header-navbar .nav-link {
       margin: 0 !important;
-      font-size: 16px; /* Font size for smaller screens */
+      font-size: 16px;
     }
   
     .header-navbar .sign-in-btn {
-      margin-top: 10px; /* Add margin to create space between button and navbar */
+      margin-top: 10px; 
     }
   }
   
@@ -50,37 +50,37 @@
 
 /* Banner Styles */
 .banner-container {
-  height: 150px; /* Fixed height for the container */
+  height: 150px; 
 }
 
 .text-container {
-  flex-grow: 1; /* Ensure the text container takes up remaining space */
-  margin-right: 1rem; /* Add margin to the right of the text */
+  flex-grow: 1; 
+  margin-right: 1rem; 
 }
 
 .banner-image {
   display: flex;
-  justify-content: flex-end; /* Align image to the right */
-  height: 100%; /* Ensure the image container's height matches the parent container */
+  justify-content: flex-end;
+  height: 100%; 
 }
 
 .banner-image img {
-  max-height: 100%; /* Make sure the image fits within the container's height */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 100%; 
+  width: auto; 
 }
 
 @media (max-width: 463px) {
   .banner-image {
-    display: none; /* Hide the image on smaller screens */
+    display: none; 
   }
 
   .text-container {
-    margin-right: 0; /* Remove margin on smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-right: 0; 
+    font-size: 1rem; 
   }
 
   .text-container div {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    font-size: 1.2rem; 
   }
 }
 
@@ -142,7 +142,6 @@
   }
 
 }
-/* Font size and boldness for screens larger than 478px */
 @media (min-width: 479px) {
   .footer-links a, .copyrighttext {
     font-size: 1.1rem;
@@ -154,4 +153,85 @@
   }
 }
 
+div.container-home a
+{
+    color: 'black';
+    text-decoration: none;
+    font: 20px Raleway;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
 
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #e44a20;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+/* Header Icon Styles */
+.header-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-icon {
+  width: 75px;
+  height: auto;
+}
+
+
+@media (max-width: 1199.98px) {
+  .header-icon {
+    width: 75px; 
+  }
+}
+
+@media (max-width: 999.98px) {
+  .header-icon {
+    width: 65px; 
+  }
+}
+
+@media (max-width: 799.98px) {
+  .header-icon {
+    width: 55px; 
+  }
+}
