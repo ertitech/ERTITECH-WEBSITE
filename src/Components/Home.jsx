@@ -10,9 +10,10 @@ const Home = () => {
     <div className="container-f">
         <HeaderEr/>
         <HeaderIcon/>
-      <div className="row align-items-center my-5">
-        <div className="col-lg-6">
-          <h1 className="font-weight-light">Streamlining Payments - Erittech's Unified Interface for Merchants</h1>
+      <div className='container'>
+      <div className="row">
+        <div className="col-md-6">
+          <h2 className="mt-4 font-md-small">Streamlining Payments - Ertitech's <br /> <span style={{color:'#e44a20'}}> Unified Interface</span><br /> for Merchants</h2>
           <p>Robust Security Measures Safeguarding Sensitive Payment Data Across Every Channel</p>
           <div className="d-flex flex-wrap">
             <div className="d-flex align-items-center p-2 col-6">
@@ -33,7 +34,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-md-6">
           <img src="https://i.postimg.cc/rwFzbpmn/a1.png" alt="Payment Orchestration" className="img-fluid"/>
         </div>
       </div>
@@ -43,7 +44,7 @@ const Home = () => {
         </div>
       </div>
       <div className="row my-5">
-        <div className="col-lg-6">
+        <div className="col-md-6">
           <h3>Welcome to Erittech Solutions Pvt Ltd</h3>
           <p>Complete Solution for Payment</p>
           <p>
@@ -55,7 +56,7 @@ const Home = () => {
             <li>We have developed the platform with strong security measures to protect sensitive payment information across all channels.</li>
           </ul>
         </div>
-        <div className="col-lg-6">
+        <div className="col-md-6">
           <img src="https://i.postimg.cc/8cNT6yfK/a2.png" alt="Erittech Solutions" className="img-fluid"/>
         </div>
       </div>
@@ -68,6 +69,7 @@ const Home = () => {
           <h4>Our Vision</h4>
           <p>Our vision is to establish a distinctive brand providing a comprehensive digital payment solution with an enhanced customer experience.</p>
         </div>
+      </div>
       </div>
       <FooterEr/>
     </div>

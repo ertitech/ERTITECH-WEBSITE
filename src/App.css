@@ -22,3 +22,19 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media (max-width: 1200px) and (min-width: 751px) {
+  .font-md-small {
+    font-size: 24px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .font-md-small {
+    font-size: 18px 
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
