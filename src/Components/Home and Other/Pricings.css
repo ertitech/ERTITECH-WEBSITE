@@ -1,0 +1,52 @@
+.container {
+    padding: 15px;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    font-weight: bold;
+    background-color: #6ec13a;
+    color: white;
+}
+
+.table-responsive {
+    margin-top: 15px;
+}
+
+.table td {
+    background-color: #e44a20;
+    font-weight: 500;
+    color: white;
+}
+
+/* Contactus styles */
+
+.contact-text-brick-red {
+    color: #e44a20;
+}
+.conemail,.conno{
+    text-decoration: none;
+}
+  
+  .contact-btn-brick-red {
+    background-color: #e44a20;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .contact-btn-brick-red:hover {
+    background-color: #6ec13a;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .contact-input {
+    margin-bottom: 1rem;
+  }
+  .contact-text {
+    font-size: 1.1rem; /* Adjust the font size as needed */
+}

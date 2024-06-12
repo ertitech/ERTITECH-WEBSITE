@@ -1,8 +1,9 @@
 import React from 'react';
-import '../App.css'
-import HeaderEr from './Header Footer/HeaderEr';
-import HeaderIcon from './Header Footer/HeaderIcon';
-import FooterEr from './Header Footer/FooterEr';
+import '../../App.css';
+import HeaderEr from '../Header Footer/HeaderEr';
+import HeaderIcon from '../Header Footer/HeaderIcon';
+import FooterEr from '../Header Footer/FooterEr';
+
 
 
 const Home = () => {

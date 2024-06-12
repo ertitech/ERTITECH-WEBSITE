@@ -2,7 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ContactUs from "./Components/Terms and Privacy/ContactUs";
 import FooterEr from "./Components/Header Footer/FooterEr";
-import Home from "./Components/Home";
+import Home from "./Components/Home and Other/Home";
 
 function App() {
   return (
