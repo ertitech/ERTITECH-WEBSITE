@@ -9,7 +9,7 @@ const HeaderEr = () => {
       <Container fluid>
         <Navbar.Brand href="#home">
           <img
-            src="https://i.postimg.cc/XvqKxNqk/logo.png"
+            src="https://i.postimg.cc/xTNYpnxL/ertitech.png"
             className="d-inline-block align-top logo"
             alt="logo"
           />
