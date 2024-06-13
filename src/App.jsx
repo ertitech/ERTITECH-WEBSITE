@@ -7,27 +7,30 @@ import Products from "./Components/Home and Other/Products";
 import Pricings from "./Components/Home and Other/Pricings";
 import TermsAndConditions from "./Components/Terms and Privacy/TermsAndConditions";
 import PrivacyPolicy from "./Components/Terms and Privacy/PrivacyPolicy";
-// import HeaderEr from "./Components/Header Footer/HeaderEr";
-// import FooterEr from "./Components/Header Footer/FooterEr";
+import useScrollToTop from "./Components/Header Footer/ScrollTop";
+import FooterEr from "./Components/Header Footer/FooterEr";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        {/* <Route path='/' element={<HeaderEr/>}/> */}
-        {/* <Route path="/" element={<FooterEr />} /> */}
-
-        <Route path='/' element={<Home/>}/>
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Products" element={<Products />} />
-        <Route path="/Pricings" element={<Pricings />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-
-      </Routes>
+      <ScrollToTopWrapper>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/Pricings" element={<Pricings />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        </Routes>
+      </ScrollToTopWrapper>
     </Router>
   );
 }
+
+const ScrollToTopWrapper = ({ children }) => {
+  useScrollToTop();
+  return children;
+};
 
 export default App;

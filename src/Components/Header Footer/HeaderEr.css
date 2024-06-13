@@ -156,10 +156,13 @@
   
 }
 
-
 /* Banner Styles */
 .banner-container {
   height: 150px; 
+  padding-left: 3% !important;
+  padding-top: 10px  !important;
+  padding-bottom: 10px  !important;
+  padding-right: 0% !important;
 }
 
 .text-container {
@@ -179,6 +182,13 @@
 }
 
 @media (max-width: 463px) {
+  .banner-container {
+    padding-left: 3% !important;
+    padding-top: 10px  !important;
+    padding-bottom: 10px  !important;
+    padding-right: 0% !important;
+  }
+
   .banner-image {
     display: none; 
   }
@@ -196,6 +206,7 @@
 
 /* Footer css */
 .footer {
+  padding: 10px 3% !important;
   background-color: #f8f9fa;
 }
 
@@ -205,6 +216,7 @@
 
 .footer-bottom hr {
   border-top: 1px solid #000;
+  width: 60%;
 }
 
 .footer-links a, .copyrighttext {
@@ -220,18 +232,14 @@
   display: inline;
 }
 
-
-@media (min-width: 430px) and (max-width: 478px) {
-  .footer-links a, .copyrighttext {
-    font-size: 1rem;
-    font-weight: 600;
+@media (max-width: 496px) {
+  .footer {
+    padding: 10px 3% !important;
+    background-color: #f8f9fa;
   }
-  .footertext {
-    font-size: 0.9rem;
-    font-weight: 400;
+  .horline {
+    width: 100% !important;
   }
-}
-@media (max-width: 429px) {
   .footer-links {
     display: flex;
     flex-direction: column;
@@ -239,28 +247,78 @@
   }
   .footertext {
     font-size: 0.7rem;
+    margin: 10px;
     font-weight: 400;
   }
   .footer-links a {
-    font-size: 1.1 rem;
+    font-size: 1rem !important;
     margin: 0.2rem 0;
   }
-
+  .copyrighttext {
+    font-size: 1.1 rem;
+    margin:10px;
+  }
   .separator {
     display: none;
   }
 
+
 }
-@media (min-width: 479px) {
+@media (max-width: 978px) {
+  .footer {
+    padding: 10px 3% !important;
+    background-color: #f8f9fa;
+  }
   .footer-links a, .copyrighttext {
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size:0.9rem;
+    font-weight: 500;
+  }
+  .footertext {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .horline {
+    width: 90%;
+  }
+
+}
+@media (min-width: 979px) {
+  .footer {
+    padding: 10px 3% !important;
+    background-color: #f8f9fa;
+  }
+  .footer-links a, .copyrighttext {
+    font-size:1.1rem;
+    font-weight: 500;
   }
   .footertext {
     font-size: 1rem;
     font-weight: 400;
   }
+  .horline {
+    width: 70%;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header Icon Styles */
 .header-icon-container {
