@@ -1,5 +1,20 @@
+/* Pricings Styles */
 .container {
     padding: 15px;
+    max-width: 70%;
+}
+
+@media (max-width: 634px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding: 0%;
+    max-width: 90%;
+  }
 }
 
 .table th, .table td {
@@ -24,6 +39,9 @@
 }
 
 /* Contactus styles */
+.contactcon{
+  padding: 10px 3% !important;
+}
 
 .contact-text-brick-red {
     color: #e44a20;
@@ -48,5 +66,5 @@
     margin-bottom: 1rem;
   }
   .contact-text {
-    font-size: 1.1rem; /* Adjust the font size as needed */
+    font-size: 1.14rem; 
 }

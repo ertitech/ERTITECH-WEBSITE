@@ -15,7 +15,7 @@ function Pricings() {
         imageSrc="https://i.postimg.cc/XqPkC3Mg/pricing-top-header-banner.png"
       />
       <div className="container my-5">
-        <h4 className="mb-4">Payment Gateway <span style={{ color: '#e44a20',fontWeight:'bold' }}> Fees Structure</span></h4>
+        <h4 className="mb-4 text-center">Payment Gateway <span style={{ color: '#e44a20',fontWeight:'bold' }}> Fees Structure</span></h4>
         <div className="table-responsive">
           <table className="table table-bordered">
             <thead style={{ backgroundColor: '#6ec13a', color: '#fff' }}>
