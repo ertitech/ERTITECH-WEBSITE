@@ -1,51 +1,160 @@
 /* header styles */
 .header-navbar {
-    padding: 20px 10px;
-  }
-  
-  .header-navbar .logo {
-    width: 150px;
+  padding: 10px 3% !important;
+}
+
+.header-navbar .logo {
+  width: 160px;
+}
+
+.header-navbar .nav-link {
+  color: black;
+  margin-right: 20px;
+  font-size: 18px; /* Default font size */
+}
+
+.header-navbar .sign-in-btn {
+  background: linear-gradient(to right, #e44a20, #6ec13a);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.container-home a {
+  color: black;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.borderYtoX a:before, .borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: '';
+  background: #e44a20;
+  transition: all 0.3s;
+}
+
+.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
+}
+
+.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.borderYtoX a:hover:before, .borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+} 
+
+/* Responsive adjustments */
+@media (min-width: 993px) {
+  .header-navbar {
+    padding: 10px 3% !important;
   }
   
   .header-navbar .nav-link {
-    color: black;
-    margin-right: 20px;
-    font-size: 17px; 
+    font-size: 17px;
+    margin-right: 15px;
   }
-  
+
   .header-navbar .sign-in-btn {
-    background: linear-gradient(to right, #e44a20, #6ec13a);
-    border: none;
-    color: white;
-    padding: 10px 20px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-navbar {
+    padding: 10px 3% !important;
   }
   
-  @media (max-width: 870px) {
-    .header-navbar .navbar-collapse {
-      justify-content: space-between;
-    }
-    .header-navbar {
-      align-items: center;
-      justify-content: center;
-    }
-    .header-navbar .nav-link {
-      margin: 0 !important;
-      font-size: 16px;
-    }
-  
-    .header-navbar .sign-in-btn {
-      margin-top: 10px; 
-    }
+  .header-navbar .nav-link {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+
+  .header-navbar .sign-in-btn {
+    padding: 8px 16px;
+  }
+
+  .container-home a {
+    font-size: 16px;
+  }
+}
+/* Offcanvas specific styles for max-width: 767px */
+@media (max-width: 767px) {
+  .header-navbar {
+    padding: 10px 3% !important;
   }
   
-  @media (max-width: 767px) {
-    .header-navbar .nav-link {
-      font-size: 14px; 
-    }
-    .header-navbar {
-        padding: 10px 0px;
-      }
+  .header-navbar .nav-link {
+    display: none;
   }
+
+  .header-navbar .sign-in-btn {
+    display: none;
+  }
+  
+  .offcanvas-header {
+    background-color: #f8f9fa; 
+  }
+
+  .offcanvas-title {
+    color: black; 
+  }
+
+  .offcanvas-body {
+    margin: 0; 
+    padding: 0;
+  }
+
+  .flex-column .nav-link {
+    padding: 1rem 0.1rem;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+  }
+  .flex-column .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent; 
+  }
+  .flex-column .nav-link.active,
+  .flex-column .nav-link:hover {
+    color: #e44a20; 
+    font-weight: bold;
+
+  }
+  .flex-column .nav-link.active::after,
+  .flex-column .nav-link:hover::after {
+    background-color: #e44a20; 
+  }
+  
+}
 
 
 /* Banner Styles */
@@ -152,59 +261,6 @@
     font-weight: 400;
   }
 }
-
-div.container-home a
-{
-    color: 'black';
-    text-decoration: none;
-    font: 20px Raleway;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-
-/* Top and Bottom borders go out */
-div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
-{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-div.borderYtoX a:before, div.borderYtoX a:after
-{
-    position: absolute;
-    opacity: 0.5;
-    height: 100%;
-    width: 2px;
-    content: '';
-    background: #e44a20;
-    transition: all 0.3s;
-}
-
-div.borderYtoX a:before
-{
-    left: 0px;
-    top: 0px;
-}
-
-div.borderYtoX a:after
-{
-    right: 0px;
-    bottom: 0px;
-}
-
-div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
-{
-    opacity: 1;
-    height: 2px;
-    width: 100%;
-}
-
 
 /* Header Icon Styles */
 .header-icon-container {

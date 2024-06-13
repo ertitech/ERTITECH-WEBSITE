@@ -4,8 +4,6 @@ import HeaderEr from '../Header Footer/HeaderEr';
 import HeaderIcon from '../Header Footer/HeaderIcon';
 import FooterEr from '../Header Footer/FooterEr';
 
-
-
 const Home = () => {
   return (
     <div className="container-f">
