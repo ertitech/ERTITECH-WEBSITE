@@ -1,0 +1,36 @@
+.termscon{
+    padding: 10px 3% !important;
+}
+.tit{
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.lastupdate{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: end;
+}
+.para{
+    line-height: 1.7;
+    text-align: justify;
+}
+.termtext{
+    color: #e44a20;
+    font-weight: 600;
+    margin-top: 4%;
+}
+.tpicon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (max-width: 463px) {
+  
+    .lastupdate{
+        text-align: center;
+    }
+    .tit{
+        text-align: center;
+    }
+    
+  }
