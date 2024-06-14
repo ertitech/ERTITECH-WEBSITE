@@ -17,7 +17,7 @@ const iconData = [
 function HeaderIcon() {
   return (
    
-          <div style={{ backgroundColor: "#f2f2f2" }} className="header-icon-container d-none d-md-flex justify-content-around p-2 m-1">
+          <div style={{ backgroundColor: "#f2f2f2" }} className="header-icon-container d-none d-md-flex justify-content-around p-2 my-1">
             {iconData.map((icon, index) => (
               <img key={index} src={icon.src} alt={icon.alt} className="header-icon img-fluid" />
             ))}
