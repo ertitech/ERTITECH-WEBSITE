@@ -53,9 +53,9 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-start">
             <div
-              className="card p-4"
+              className="card h-100 p-4"
               style={{
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
                 width: "100%",
