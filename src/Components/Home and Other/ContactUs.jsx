@@ -1,10 +1,68 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import HeaderEr from "../Header Footer/HeaderEr";
 import Banner from "../Header Footer/Banner";
 import FooterEr from "../Header Footer/FooterEr";
 import "bootstrap/dist/css/bootstrap.min.css";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const formRef = useRef();
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handlePhoneChange = (e) => {
+    const { value } = e.target;
+    if (/^\d*$/.test(value)) {
+      setFormData({
+        ...formData,
+        phone: value,
+      });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_izynuaw",
+        "template_qw11szn",
+        formRef.current,
+        "xq-RZ0Sb8gGZ0P5Qf"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <>
       <HeaderEr />
@@ -65,13 +123,17 @@ function ContactUs() {
               <h3 className="contact-text-brick-red fw-bold mb-4 contact-heading text-center">
                 Leave A Message
               </h3>
-              <form>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input
                     type="text"
                     className="form-control contact-input"
                     id="name"
+                    name="name"
                     placeholder="Name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -79,7 +141,12 @@ function ContactUs() {
                     type="email"
                     className="form-control contact-input"
                     id="email"
-                    placeholder="Email ID"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   />
                 </div>
                 <div className="form-group">
@@ -87,7 +154,14 @@ function ContactUs() {
                     type="tel"
                     className="form-control contact-input"
                     id="phone"
+                    name="phone"
                     placeholder="Phone"
+                    value={formData.phone}
+                    onChange={handlePhoneChange}
+                    required
+                    maxLength={10}
+                    minLength={10}
+                    inputMode="numeric"
                   />
                 </div>
                 <div className="form-group">
@@ -95,15 +169,23 @@ function ContactUs() {
                     type="text"
                     className="form-control contact-input"
                     id="subject"
+                    name="subject"
                     placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
                 <div className="form-group">
                   <textarea
                     className="form-control contact-input"
                     id="message"
+                    name="message"
                     rows="4"
                     placeholder="Message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
                   ></textarea>
                 </div>
                 <div className="d-flex justify-content-center">
@@ -120,6 +202,7 @@ function ContactUs() {
         </div>
       </div>
       <FooterEr />
+      <ToastContainer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import HeaderEr from '../Header Footer/HeaderEr';
 import Banner from '../Header Footer/Banner';
+import { FaHandPointRight } from "react-icons/fa";
 import FooterEr from '../Header Footer/FooterEr';
 import './Terms.css'
 
@@ -26,28 +27,62 @@ function PrivacyPolicy() {
             </p>
             <h5 className='termtext'>Information Collection and Use</h5>
             <p className="para">We collect various types of information for the purpose of providing and improving our payment gateway services. This may include:</p>
-            <ul>
-              <li>Personal Information: We may collect personal information such as your name, email address, phone number, postal address, and payment card details.</li>
-              <li>Transaction Information: We collect transaction details, including the amount, currency, transaction ID, and other relevant information necessary for processing payments.</li>
-              <li>Device Information: We may collect information about the device you use to access our services, including device identifiers, IP address, browser type, and operating system.</li>
-            </ul>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              Personal Information: We may collect personal information such as your name, email address, phone number, postal address, and payment card details.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              Transaction Information: We collect transaction details, including the amount, currency, transaction ID, and other relevant information necessary for processing payments.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              Device Information: We may collect information about the device you use to access our services, including device identifiers, IP address, browser type, and operating system.
+            </p>
+            
             <h5 className='termtext'>Use of Information</h5>
             <p className="para">We use the information we collect for the following purposes as per the KYC norms of RBI and Banking policies:</p>
-            <ul>
-              <li>To process payments and facilitate transactions.</li>
-              <li>To communicate with you regarding your transactions, account status, and updates to our services.</li>
-              <li>To provide customer support and respond to inquiries.</li>
-              <li>To detect and prevent fraud, unauthorized transactions, and other illegal activities.</li>
-              <li>To send updates, news, newsletters, and marketing purposes (send us an email - hello@ertitech.com to unsubscribe)</li>
-            </ul>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To process payments and facilitate transactions.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To communicate with you regarding your transactions, account status, and updates to our services.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To provide customer support and respond to inquiries.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To detect and prevent fraud, unauthorized transactions, and other illegal activities.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To send updates, news, newsletters, and marketing purposes (send us an email - hello@ertitech.com to unsubscribe).
+            </p>
+          
             <h5 className='termtext'>Disclosure of Information</h5>
             <p className="para">We may disclose your personal information in the following circumstances:</p>
-            <ul>
-              <li>To trusted third-party service providers who assist us in operating our payment gateway services, conducting our business, or servicing you.</li>
-              <li>To comply with legal obligations, such as responding to lawful requests from government authorities.</li>
-              <li>To protect and defend our rights or property, including enforcing our agreements and policies.</li>
-              <li>In connection with a corporate transaction, such as a merger, acquisition, or sale of assets.</li>
-            </ul>
+
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To trusted third-party service providers who assist us in operating our payment gateway services, conducting our business, or servicing you.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To comply with legal obligations, such as responding to lawful requests from government authorities.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              To protect and defend our rights or property, including enforcing our agreements and policies.
+            </p>
+            <p className="para">
+              <FaHandPointRight className="tpicon" />
+              In connection with a corporate transaction, such as a merger, acquisition, or sale of assets.
+            </p>
+            
             <h5 className='termtext'>Data Retention</h5>
             <p className="para">We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
             <h5 className='termtext'>Your Rights</h5>

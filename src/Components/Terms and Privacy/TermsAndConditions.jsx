@@ -19,9 +19,8 @@ function TermsAndConditions() {
         <Row>
           <Col>
             <h4 className="tit">
-              Our
-              <span style={{ color: "#e44a20", fontWeight: "bold" }}>
-                Terms & Conditions{" "}
+              Our <span style={{ color: "#e44a20", fontWeight: "bold" }}>
+                 Terms & Conditions{" "}
               </span>
             </h4>
             <div className="lastupdate mb-3 ">Last Updated: 1st April 2024</div>
