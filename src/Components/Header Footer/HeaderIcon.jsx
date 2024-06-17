@@ -15,13 +15,7 @@ const iconData = [
 ];
 
 function HeaderIcon() {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js').then(() => {
-      // Initialize tooltips
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
-      tooltipTriggerList.map(tooltipTriggerEl => new window.bootstrap.Tooltip(tooltipTriggerEl));
-    });
-  }, []);
+  
 
   return (
     <div style={{ backgroundColor: "#f2f2f2" }} className="header-icon-container d-none d-md-flex justify-content-around p-2 my-1">
@@ -32,7 +26,6 @@ function HeaderIcon() {
             alt={icon.alt}
             className="header-icon img-fluid"
             data-toggle="tooltip"
-            title={icon.alt} // Tooltip text
           />
           <div className="icon-text">{icon.alt}</div>
         </div>

@@ -16,7 +16,11 @@ const FooterEr = () => {
             />
           </div>
           <div className="social-icons d-flex justify-content-center mb-4">
-            <a href="#">
+            <a 
+              href="https://www.facebook.com/people/Ertitech/61560782950016"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://i.postimg.cc/85FLDjdy/facebook.png"
                 alt="Facebook"
@@ -24,7 +28,11 @@ const FooterEr = () => {
                 style={{ maxHeight: "30px" }}
               />
             </a>
-            <a href="#">
+            <a 
+              href="https://www.instagram.com/ertitech/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://i.postimg.cc/5NmYhBd4/instagram.png"
                 alt="Instagram"
@@ -32,7 +40,11 @@ const FooterEr = () => {
                 style={{ maxHeight: "30px" }}
               />
             </a>
-            <a href="#">
+            <a 
+              href="https://www.linkedin.com/company/ertitech-solutions-private-limited/people/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://i.postimg.cc/ZqWWvX9n/linked-in.png"
                 alt="LinkedIn"
@@ -40,7 +52,11 @@ const FooterEr = () => {
                 style={{ maxHeight: "30px" }}
               />
             </a>
-            <a href="#">
+            <a 
+              href="https://api.whatsapp.com/send?phone=8122686806&text=YOUR_MESSAGE" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="https://i.postimg.cc/65BTf87D/whatsapp.png"
                 alt="WhatsApp"

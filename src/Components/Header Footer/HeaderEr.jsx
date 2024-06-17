@@ -92,7 +92,10 @@ const HeaderEr = () => {
             />
           </Nav>
         </Navbar.Collapse>
-        <Button className="sign-in-btn d-none d-md-inline">
+        <Button
+          className="sign-in-btn d-none d-md-inline"
+          onClick={() => window.open("https://merchant.ertipay.com", "_blank")}
+        >
           Sign Up/Login
         </Button>
       </Navbar>

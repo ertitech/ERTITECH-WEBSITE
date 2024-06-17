@@ -317,7 +317,7 @@
 
 .icon-wrapper:hover {
   transform: translateY(-10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .icon-wrapper:hover .header-icon {
@@ -328,7 +328,7 @@
   opacity: 0;
   transition: opacity 0.3s;
   position: absolute;
-  bottom: -1.5rem;
+  bottom: -2.5rem;
   background-color: #e44a20;
   color: white;
   padding: 0.2rem 0.5rem;

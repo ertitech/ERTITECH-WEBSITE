@@ -8,7 +8,6 @@ import Pricings from "./Components/Home and Other/Pricings";
 import TermsAndConditions from "./Components/Terms and Privacy/TermsAndConditions";
 import PrivacyPolicy from "./Components/Terms and Privacy/PrivacyPolicy";
 import useScrollToTop from "./Components/Header Footer/ScrollTop";
-import FooterEr from "./Components/Header Footer/FooterEr";
 
 function App() {
   return (

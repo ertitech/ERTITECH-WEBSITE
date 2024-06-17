@@ -152,7 +152,7 @@ function AboutUs() {
 </div>
 
 
-      {/* <div className="about-us1 ">
+      <div className="about-us1 bottomcon">
       <div className="section-content1 d-flex align-items-center" >
   <div className="testimonials px-5 w-100">
     <div className="mb-4 fs-4 pt-0 mt-0">
@@ -246,7 +246,7 @@ function AboutUs() {
     </div>
   </div>
 </div>
-</div> */}
+</div>
 
       <FooterEr />
     </>

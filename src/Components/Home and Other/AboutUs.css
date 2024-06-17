@@ -154,7 +154,9 @@
       padding: 10px 3% !important;
       height: 500px;
     }
-   
+   .bottomcon{
+    display: none;
+   }
     .about-us .blueimg {
       width: 80%;
     }
@@ -166,6 +168,9 @@
     padding: 0;
     margin: 0;
     }
+    .bottomcon{
+      display: none;
+     }
     .about-us {
       height: auto;
     }
@@ -200,6 +205,9 @@ display:none;
     padding: 0;
     margin: 0;
     }
+    .bottomcon{
+      display: none;
+     }
     .section-item1{
       font-size: 13px;
     }
