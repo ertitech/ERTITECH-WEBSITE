@@ -14,39 +14,32 @@ function AboutUs() {
         belowText="Home &gt; Our Informations"
         imageSrc="https://i.postimg.cc/Bb2jR2Kz/top-banner-strip.png"
       />
-      <div className="about-us my-5 container-fluid section-content d-flex flex-wrap ">
-        <div className=" m-0 section-content d-flex flex-wrap ">
-          <div className="col-md-7">
-            <h3 className="mb-4 text-start ">
-              About
-              <span style={{ color: "#e44a20", fontWeight: "bold" }}>
-                {" "}
-                Ertitech Solutions Pvt Ltd
-              </span>
-            </h3>
-            <div>
-              Ertitech Solutions Private Limited, an innovative leader in the
-              domain of digital payment solutions. We are transforming the
-              landscape of how businesses handle transactions and interact with
-              customers with our state-of-the-art payment gateway technology.
-            </div>
-            <div>
-              <br />
-              We are specialized in payment orchestration – a dynamic approach
-              to payment processing that optimizes transaction routes, minimizes
-              costs, and enhances the overall payment experience for businesses
-              and their customers.
-            </div>
-          </div>
-          <div className="col-md-5 justify-content-center d-flex">
-            <img
-              src="https://i.postimg.cc/FRWp75Cv/abt.png"
-              alt="Payment Orchestration"
-              className="img-fluid blueimg"
-            />
-          </div>
-        </div>
+      <div className="about-us my-5 container-fluid section-content d-flex flex-wrap align-items-center" >
+  <div className="m-0 section-content d-flex flex-wrap align-items-center">
+    <div className="col-md-7 col-sm-12">
+      <h3 className="mb-4 aboutheading">
+        About 
+        <span style={{ color: "#e44a20", fontWeight: "bold" }}>
+         {' '} Ertitech Solutions Pvt Ltd
+        </span>
+      </h3>
+      <div>
+        Ertitech Solutions Private Limited, an innovative leader in the domain of digital payment solutions. We are transforming the landscape of how businesses handle transactions and interact with customers with our state-of-the-art payment gateway technology.
       </div>
+      <div>
+        <br />
+        We are specialized in payment orchestration – a dynamic approach to payment processing that optimizes transaction routes, minimizes costs, and enhances the overall payment experience for businesses and their customers.
+      </div>
+    </div>
+    <div className="col-md-5 justify-content-center d-flex">
+      <img
+        src="https://i.postimg.cc/FRWp75Cv/abt.png"
+        alt="Payment Orchestration"
+        className="img-fluid blueimg"
+      />
+    </div>
+  </div>
+</div>
 
       <div className="about-us1 my-0">
         <div className="section-content1 ps-5">
@@ -100,169 +93,161 @@ function AboutUs() {
         </div>
       </div>
 
-      <div class="about-us my-5 container-fluid">
-        <div class="team-info">
-          <h4 class="section-title">Meet Our Team</h4>
-          <div class="row">
-            <div class="team-member mb-4">
-              <div class="icon">
-                <img
-                  src="https://i.postimg.cc/5ttn12pg/founder.png"
-                  alt="Founder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <div class="title1">Our Founder</div>
-                <p className="meetpara">
-                  An ardent and committed specialist with more than two decades
-                  of experience in Banking and Fintech since 2004, exemplifying
-                  a strong business acumen.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div className="about-us my-5 container-fluid d-flex align-items-center">
+  <div className="team-info w-100">
+    <h4 className="section-title">Meet Our Team</h4>
+    <div className="row">
+      <div className="team-member mb-4 d-flex">
+        <div className="icon">
+          <img
+            src="https://i.postimg.cc/5ttn12pg/founder.png"
+            alt="Founder"
+            className="img-fluid"
+          />
+        </div>
+        <div className="text">
+          <div className="title1">Our Founder</div>
+          <p className="meetpara">
+            An ardent and committed specialist with more than two decades of experience in Banking and Fintech since 2004, exemplifying a strong business acumen.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="team-member mb-4 d-flex">
+        <div className="icon">
+          <img
+            src="https://i.postimg.cc/4d9vN7c6/registered-address.png"
+            alt="Registered Address"
+            className="img-fluid"
+          />
+        </div>
+        <div className="text">
+          <div className="title1">Registered Address</div>
+          <p className="meetpara">
+            Erittech Solutions Pvt Ltd, No-7, G1, Bharathiyar Street, Prashanti Nagar, Chromepet, Chennai – 600 044, Tamilnadu, India.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="row">
+      <div className="team-member d-flex">
+        <div className="icon">
+          <img
+            src="https://i.postimg.cc/XN5xnhKR/headquarters.png"
+            alt="Business Headquarters"
+            className="img-fluid"
+          />
+        </div>
+        <div className="text">
+          <div className="title1">Business Headquarters</div>
+          <p className="meetpara">
+            Erittech Solutions Pvt Ltd, Old.no.111, New.no.525, Radha Towers, 2nd Floor, Narayanapillai Street, Salem – 636 007, Tamilnadu, India.
+          </p>
+          <p className="meetpara" style={{ fontWeight: 500 }}>CIN - U72900TN2022PTC148971</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div class="row">
-            <div class="team-member mb-4">
-              <div class="icon">
-                <img
-                  src="https://i.postimg.cc/4d9vN7c6/registered-address.png"
-                  alt="Founder"
-                  class="img-fluid"
+
+      {/* <div className="about-us1 ">
+      <div className="section-content1 d-flex align-items-center" >
+  <div className="testimonials px-5 w-100">
+    <div className="mb-4 fs-4 pt-0 mt-0">
+      What Our <span className="section-title1">Customers Say</span>
+    </div>
+    <div className="row px-3 justify-content-center">
+      <div className="col-md-4 aboutcard-testimonial px-5">
+        <div className="card aboutcard-card">
+          <div className="aboutcard-card-body">
+            <div className="aboutcard-stars m-3 d-flex justify-content-center">
+              {[...Array(5)].map((_, index) => (
+                <FaStar
+                  key={index}
+                  color="#ffd700"
+                  className="me-2"
+                  size={25}
                 />
-              </div>
-              <div class="text">
-                <div class="title1">Registered Address</div>
-                <p className="meetpara">
-                  Erittech Solutions Pvt Ltd, No-7, G1, Bharathiyar Street,
-                  Prashanti Nagar, Chromepet, Chennai – 600 044, Tamilnadu,
-                  India.
-                </p>
-              </div>
+              ))}
             </div>
+            <h5 className="about-card-title mb-4 text-center">
+              Great Fast Reliable Service
+            </h5>
+            <p className="mb-5 text-center">
+              Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.
+            </p>
           </div>
-          <div class="row">
-            <div class="team-member">
-              <div class="icon">
-                <img
-                  src="https://i.postimg.cc/XN5xnhKR/headquarters.png"
-                  alt="Founder"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <div class="title1">Business Headquarters</div>
-                <p className="meetpara">
-                  Erittech Solutions Pvt Ltd, Old.no.111, New.no.525, Radha
-                  Towers, 2nd Floor, Narayanapillai Street, Salem – 636 007,
-                  Tamilnadu, India.
-                </p>
-                <p style={{ fontWeight: "500" }}>CIN - U72900TN2022PTC148971</p>
-              </div>
-            </div>
+          <div className="aboutcard-card-footer text-center">
+            <div>Clients Name Here</div>
+            <div>Clients Designation</div>
           </div>
         </div>
       </div>
-
-      <div className="about-us1 ">
-        <div className="section-content1 ">
-          <div className="testimonials px-5 ">
-            <div className="mb-4 fs-4">
-              What Our <span class="section-title1 ">Customers Say</span>
+      <div className="col-md-4 aboutcard-testimonial px-5">
+        <div className="card aboutcard-card">
+          <div className="aboutcard-card-body">
+            <div className="aboutcard-stars m-3 d-flex justify-content-center">
+              {[...Array(5)].map((_, index) => (
+                <FaStar
+                  key={index}
+                  color="#ffd700"
+                  className="me-2"
+                  size={25}
+                />
+              ))}
             </div>
-
-            <div className="row px-3">
-              <div className="col-md-4 aboutcard-testimonial px-5">
-                <div className="card aboutcard-card">
-                  <div className="aboutcard-card-body">
-                    <div className="aboutcard-stars m-3 d-flex justify-content-center">
-                      {[...Array(5)].map((_, index) => (
-                        <FaStar
-                          key={index}
-                          color="#ffd700"
-                          className="me-2"
-                          size={25}
-                        />
-                      ))}
-                    </div>
-                    <h5 className="about-card-title mb-4">
-                      Great Fast Reliable Service
-                    </h5>
-                    <p className="mb-5 text-center">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                  <div className="aboutcard-card-footer">
-                    <div>Clients Name Here</div>
-                    <div>Clients Designation</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-4 aboutcard-testimonial px-5">
-                <div className="card aboutcard-card">
-                  <div className="aboutcard-card-body">
-                    <div className="aboutcard-stars m-3 d-flex justify-content-center">
-                      {[...Array(5)].map((_, index) => (
-                        <FaStar
-                          key={index}
-                          color="#ffd700"
-                          className="me-2"
-                          size={25}
-                        />
-                      ))}
-                    </div>
-                    <h5 className="about-card-title mb-4">
-                      Great Fast Reliable Service
-                    </h5>
-                    <p className="mb-5 text-center">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                  <div className="aboutcard-card-footer">
-                    <div>Clients Name Here</div>
-                    <div>Clients Designation</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-4 aboutcard-testimonial px-5">
-                <div className="card aboutcard-card">
-                  <div className="aboutcard-card-body">
-                    <div className="aboutcard-stars m-3 d-flex justify-content-center">
-                      {[...Array(5)].map((_, index) => (
-                        <FaStar
-                          key={index}
-                          color="#ffd700"
-                          className="me-2"
-                          size={25}
-                        />
-                      ))}
-                    </div>
-                    <h5 className="about-card-title mb-4">
-                      Great Fast Reliable Service
-                    </h5>
-                    <p className="mb-5 text-center">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                  <div className="aboutcard-card-footer">
-                    <div>Clients Name Here</div>
-                    <div>Clients Designation</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h5 className="about-card-title mb-4 text-center">
+              Great Fast Reliable Service
+            </h5>
+            <p className="mb-5 text-center">
+              Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.
+            </p>
+          </div>
+          <div className="aboutcard-card-footer text-center">
+            <div>Clients Name Here</div>
+            <div>Clients Designation</div>
           </div>
         </div>
       </div>
+      <div className="col-md-4 aboutcard-testimonial px-5">
+        <div className="card aboutcard-card">
+          <div className="aboutcard-card-body">
+            <div className="aboutcard-stars m-3 d-flex justify-content-center">
+              {[...Array(5)].map((_, index) => (
+                <FaStar
+                  key={index}
+                  color="#ffd700"
+                  className="me-2"
+                  size={25}
+                />
+              ))}
+            </div>
+            <h5 className="about-card-title mb-4 text-center">
+              Great Fast Reliable Service
+            </h5>
+            <p className="mb-5 text-center">
+              Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.
+            </p>
+          </div>
+          <div className="aboutcard-card-footer text-center">
+            <div>Clients Name Here</div>
+            <div>Clients Designation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> */}
+
       <FooterEr />
     </>
   );

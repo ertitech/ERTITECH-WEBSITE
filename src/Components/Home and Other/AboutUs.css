@@ -6,13 +6,16 @@
   }
   
   .about-us1 {
-    height: 550px;
+    height: 650px;
     background-color: #e44a20;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
+  .aboutheading{
+    align-items: start;
+  }
   .about-us .section-title {
     color: #e44a20;
     font-weight: 600;
@@ -127,20 +130,52 @@
   }
   
   /* Media Queries */
-  
-  @media (max-width: 992px) {
+   
+  @media (min-width: 1600px) {
+    .about-us {
+      padding: 10px 3% !important;
+      height: 550px;
+    }
     .about-us .blueimg {
-      width: 100%;
+      width: 50%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .about-us {
+      padding: 10px 3% !important;
+      height: 450px;
+    }
+    .about-us .blueimg {
+      width: 70%;
+    }
+  }
+  @media (max-width: 992px) {
+    .about-us {
+      padding: 10px 3% !important;
+      height: 500px;
+    }
+   
+    .about-us .blueimg {
+      width: 80%;
     }
   }
   
-  @media (max-width: 768px) {
-    .about-us1,
+  @media (min-width: 540px )and (max-width: 768px) {
+    .about-us1{
+    height: 750px;
+    padding: 0;
+    margin: 0;
+    }
     .about-us {
       height: auto;
     }
-  
-    .about-us1 .section-content1,
+    .about-us .blueimg {
+      margin-top: 5%;
+      width: 50%;
+    }
+    .about-us1 .section-icon1{
+display:none;
+    }
     .about-us .section-content {
       padding: 10px;
     }
@@ -158,21 +193,41 @@
       padding: 0;
     }
   }
-  
-  @media (max-width: 576px) {
+ 
+  @media (max-width: 539px) {
+    .about-us1{
+    height: 850px;
+    padding: 0;
+    margin: 0;
+    }
+    .section-item1{
+      font-size: 13px;
+    }
+    .about-us {
+      height: auto;
+    }
     .about-us .blueimg {
-      display: none;
+      margin-top: 5%;
+      width: 50%;
+    }
+    .about-us1 .section-icon1{
+display:none;
+    }
+    .about-us .section-content {
+      padding: 10px;
     }
   
     .about-us1 .section-item1 {
-      flex-direction: column;
-      align-items: center;
+      padding-left: 0;
+    }
+  
+    .about-us1 .section-content1-text,
+    .about-us .section-content {
       text-align: center;
     }
   
-    .about-us1 .section-icon1 {
-      margin-right: 0;
-      margin-bottom: 10px;
+    .aboutcard-testimonial {
+      padding: 0;
     }
   }
-  
+ 
