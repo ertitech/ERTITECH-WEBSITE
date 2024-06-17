@@ -69,7 +69,7 @@ function Products() {
       />
       <div className="container-fluid my-5 productcon">
         <div className="row">
-          <h4 className="mb-4 text-start ">Our<span style={{ color: '#e44a20', fontWeight: 'bold' }}> Products</span></h4>
+          <h3 className="mb-4 text-start ">Our<span style={{ color: '#e44a20', fontWeight: 'bold' }}> Products</span></h3>
           {products.map((product, index) => (
             <div key={index} className="col-12 col-sm-12 col-md-6 col-lg-6 mb-2 px-4 py-3 "  >
 

@@ -74,9 +74,9 @@ function ContactUs() {
       <div className="contactcon container-fluid my-5">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12 mb-4">
-            <h2 className="contact-text-brick-red fw-bold mb-4 text-center">
+            <h3 className="contact-text-brick-red fw-bold mb-4 text-center">
               Ertitech Solutions Pvt Ltd
-            </h2>
+            </h3>
             <p className="contact-text text-center">
               If you have any feedback about Ertitech, feel free to contact us!
             </p>
@@ -86,7 +86,7 @@ function ContactUs() {
             <p className="contact-text text-center">
               Send us an Email -{" "}
               <a
-                className="contact-text-brick-red conemail fw-bold"
+                className="contact-text-brick-red conemail"style={{fontWeight:'500'}}
                 href="mailto:hello@ertitech.com"
               >
                 hello@ertitech.com
@@ -95,7 +95,7 @@ function ContactUs() {
             <p className="contact-text text-center">
               Message us on WhatsApp -{" "}
               <a
-                className="contact-text-brick-red conno fw-bold"
+                className="contact-text-brick-red conno "style={{fontWeight:'500'}}
                 href="tel:+918122686806"
               >
                 +91 81226 86806
@@ -120,9 +120,9 @@ function ContactUs() {
                 maxWidth: "77%",
               }}
             >
-              <h3 className="contact-text-brick-red fw-bold mb-4 contact-heading text-center">
+              <h4 className="contact-text-brick-red fw-bold mb-4 contact-heading text-center">
                 Leave A Message
-              </h3>
+              </h4>
               <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input
