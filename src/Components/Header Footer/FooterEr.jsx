@@ -84,22 +84,11 @@ const FooterEr = () => {
           <div className="footer-bottom text-center text-lg-end">
             <hr className="horline mx-auto" />
             <p className="text-dark mb-0 text-center copyrighttext">
-              &copy; 2022 Ertitech Solutions Pvt Ltd, All Rights Reserved
+              &copy; 2024 Ertitech Solutions Pvt Ltd, All Rights Reserved
             </p>
           </div>
         </div>
-        <div className="row">
-          <p
-            className="text-dark mt-3 text-center footertext"
-            style={{ textAlign: "justify" }}
-          >
-            Ertitech Services in India are functioned by Ertitech Solutions Pvt
-            Ltd (CIN - U72900TN2022PTC148971) (GSTN - 33AAGCE8342L1ZF) &
-            Ertitech Services in Georgia are functioned by Ertitech Solutions
-            LLC (Registration No - 406340623). All the users are advised to read
-            our Terms & Conditions carefully.
-          </p>
-        </div>
+       
       </div>
     </footer>
   );

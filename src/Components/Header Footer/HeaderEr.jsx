@@ -140,11 +140,11 @@ const HeaderEr = () => {
               location={location}
               onClick={handleClose}
             />
-            <NavLink
-              to="/Login"
+           <NavLink
+              onClick={() => window.open("https://merchant.ertipay.com", "_blank")}
               text="Sign Up/Login"
               location={location}
-              onClick={handleClose}
+              handleClose={handleClose}
             />
           </Nav>
         </Offcanvas.Body>
