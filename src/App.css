@@ -1,8 +1,6 @@
 .home-con {
-  background-image: url('./merchant background.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -19,14 +17,14 @@
 }
 
 @media(max-width:1024px){
-  .home-con{
-    height: auto;
-  }
   .home-content{
     margin: 5% auto;
   }
   .font-md-small{
     font-size: 24px;
+  }
+  .home-banner{
+    height: auto !important;
   }
 }
 
@@ -36,5 +34,196 @@
   }
   .size-small{
     font-size: 16px !important;
+  }
+}
+.home-banner * {
+  z-index: 2;
+}
+
+.background-shapes {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5076px;
+  background-size: 100%;
+  animation: infiniteScroll 120s linear infinite;
+  background-image: url('https://cdn2.hubspot.net/hubfs/53/Pricing%202017%20Assets/marketing/Header_Circles-1.svg');
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -1692px, 0);
+  }
+}
+.home-banner {
+  background: linear-gradient( 135deg, #ff7e5f, #feb47b, #8732e1, #3776e1, #43e97b, #38f9d7, #ff9a9e, #fad0c4, #ff9966, #ff5e62);
+  background-size: 400% 400%;
+  animation: gradient-animation 8s ease infinite;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  10% {
+    background-position: 10% 20%;
+  }
+  20% {
+    background-position: 30% 10%;
+  }
+  30% {
+    background-position: 40% 30%;
+  }
+  40% {
+    background-position: 50% 40%;
+  }
+  50% {
+    background-position: 60% 50%;
+  }
+  60% {
+    background-position: 70% 60%;
+  }
+  70% {
+    background-position: 80% 70%;
+  }
+  80% {
+    background-position: 90% 80%;
+  }
+  90% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+affiliations-container {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+ .affiliation-icon {
+  width: 120px;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.iconcon2{
+  width: 80%;
+  margin: auto ;
+}
+
+
+
+.features-container {
+  background-color: #e44a20;
+  margin: 1rem 0;
+  padding: 4rem 0;
+  color: white;
+}
+
+.whyerti1{
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.whyerti2{
+ font-weight: 700;
+ text-decoration: underline;
+ letter-spacing: 1px;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.feature-text {
+  width: 70%;
+  margin: 0 auto 2.5rem auto;
+  color: white;
+  font-size: 18px;
+}
+.iconcon {
+  width: 70%;
+  margin: 10px auto 0 auto;
+}
+
+.feature-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.featurecaption{
+  font-weight: 500;
+  font-size: 18px;
+}
+.feature-gif {
+  width: 130px;
+  transform: translateY(-10px);
+  display: none; 
+}
+
+.products-container{
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  background-color: rgba(169, 169, 169, 0.1);
+  color: black;
+  font-weight: 500;
+}
+.iconcon1 {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  
+}
+.product-icon-container{
+  margin-bottom: 2rem;
+
+}
+.product-icon{
+  width: 90px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.product-hover {
+  transform: scale(1.15); 
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Media queries for mobile view */
+@media (max-width: 767px) {
+  .iconcon,
+  .iconcon1,
+  .iconcon2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-icon-container,
+  .product-icon-container,
+  .col-4 {
+    width: 100%;
+    max-width: 100px;
+    margin: 10px;
+  }
+
+  .feature-icon,
+  .feature-gif,
+  .product-icon,
+  .affiliation-icon {
+    width: 100%;
+    height: auto;
   }
 }
