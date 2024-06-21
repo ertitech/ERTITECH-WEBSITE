@@ -69,65 +69,63 @@ function ContactUs() {
       <Banner
         title="Contact Us"
         belowText="Home &gt; Contact Informations"
-        imageSrc="https://i.postimg.cc/T2SZh4x0/contact-top-banner-strip.png"
       />
       <div className="contactcon container-fluid my-5">
-        <div className="row align-items-center">
+        <div className="row align-items-center mx-4">
           <div className="col-lg-6 col-12 mb-4">
-            <h3 className="contact-text-brick-red fw-bold mb-4 text-center">
+            <h3 className="contact-text-brick-red fw-bold mb-4 text-center text-md-center text-lg-start">
               Ertitech Solutions Pvt Ltd
             </h3>
-            <p className="contact-text text-center">
+            <p className="contact-text text-center text-md-center text-lg-start">
               If you have any feedback about Ertitech, feel free to contact us!
             </p>
-            <p className="contact-text text-center">
+            <p className="contact-text text-center text-md-center text-lg-start">
               (Monday-Friday; 10am – 6pm local timings)
             </p>
-            <p className="contact-text text-center">
-              Send us an Email -{" "}
+            <p className="contact-text text-center text-md-center text-lg-start">              Send us an Email -{" "}
               <a
-                className="contact-text-brick-red conemail"style={{fontWeight:'500'}}
+                className="contact-text-brick-red conemail"
+                style={{ fontWeight: "500" }}
                 href="mailto:hello@ertitech.com"
               >
                 hello@ertitech.com
               </a>
             </p>
-            <p className="contact-text text-center">
+            <p className="contact-text text-center text-md-center text-lg-start">
               Message us on WhatsApp -{" "}
               <a
-                className="contact-text-brick-red conno "style={{fontWeight:'500'}}
+                className="contact-text-brick-red conno "
+                style={{ fontWeight: "500" }}
                 href="tel:+918122686806"
               >
                 +91 81226 86806
               </a>
             </p>
 
-            <div className="text-center mt-4">
+            <div className="text-center text-md-center text-lg-start mt-4 ">
               <img
-                src="https://i.postimg.cc/k4pVy2q2/contact.png"
+                src="https://i.postimg.cc/zD7NZ9dS/contact-us.png"
                 alt="Contact"
-                style={{ maxWidth: "50%" }}
+                style={{ maxWidth: "80%" }}
               />
             </div>
           </div>
 
-          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-start">
-            <div
-              className="card h-100 p-4"
+          <div className="col-lg-6 col-12 d-flex justify-content-center">
+          <div
+              className="card h-100 p-4 contact-card"
               style={{
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
                 width: "100%",
-                maxWidth: "77%",
+                backgroundColor: "rgba(0,0,0,0.7)",
               }}
             >
-              <h4 className="contact-text-brick-red fw-bold mb-4 contact-heading text-center">
-                Leave A Message
-              </h4>
+              <h4 className=" fw-bold mb-4 contact-heading">Leave A Message</h4>
               <form ref={formRef} onSubmit={handleSubmit}>
-                <div className="form-group">
+                <div className="form-group row d-flex justify-content-center">
                   <input
                     type="text"
-                    className="form-control contact-input"
+                    className="form-control contact-input col me-3"
                     id="name"
                     name="name"
                     placeholder="Name"
@@ -135,11 +133,10 @@ function ContactUs() {
                     onChange={handleChange}
                     required
                   />
-                </div>
-                <div className="form-group">
+
                   <input
                     type="email"
-                    className="form-control contact-input"
+                    className="form-control contact-input col"
                     id="email"
                     name="email"
                     placeholder="Email"
@@ -149,10 +146,10 @@ function ContactUs() {
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group row d-flex justify-content-center">
                   <input
                     type="tel"
-                    className="form-control contact-input"
+                    className="form-control contact-input col me-3"
                     id="phone"
                     name="phone"
                     placeholder="Phone"
@@ -163,11 +160,9 @@ function ContactUs() {
                     minLength={10}
                     inputMode="numeric"
                   />
-                </div>
-                <div className="form-group">
                   <input
                     type="text"
-                    className="form-control contact-input"
+                    className="form-control contact-input col"
                     id="subject"
                     name="subject"
                     placeholder="Subject"
@@ -178,7 +173,7 @@ function ContactUs() {
                 </div>
                 <div className="form-group">
                   <textarea
-                    className="form-control contact-input"
+                    className="form-control contact-input1"
                     id="message"
                     name="message"
                     rows="4"
@@ -186,6 +181,7 @@ function ContactUs() {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    style={{ width: "100%" }}
                   ></textarea>
                 </div>
                 <div className="d-flex justify-content-center">

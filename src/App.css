@@ -26,6 +26,9 @@
   .home-banner{
     height: auto !important;
   }
+  .feature-text{
+    text-align: justify !important;
+  }
 }
 
 @media(max-width:391px){
@@ -62,7 +65,7 @@
   }
 }
 .home-banner {
-  background: linear-gradient( 135deg, #ff7e5f, #feb47b, #8732e1, #3776e1, #43e97b, #38f9d7, #ff9a9e, #fad0c4, #ff9966, #ff5e62);
+  background: linear-gradient( 135deg, #ff7e5f, #feb47b,  #43e97b, #38f9d7, #ff9a9e, #fad0c4, #ff9966, #ff5e62);
   background-size: 400% 400%;
   animation: gradient-animation 8s ease infinite;
   width: 100%;
@@ -110,26 +113,39 @@
     background-position: 0% 100%;
   }
 }
-affiliations-container {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+.iconcon2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 3%;
 }
-
- .affiliation-icon {
-  width: 120px;
+.affiliation-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotted-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dotted-col.border-right {
+  border-right: 2px dotted #000;
+}
+.dotted-col.border-bottom {
+  border-bottom: 2px dotted #000 !important;
+}
+.affiliations-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.affiliation-icon {
+  width: 100px;
   height: auto;
-  margin-bottom: 3rem;
+  margin: 30% 0;
 }
-.iconcon2{
-  width: 80%;
-  margin: auto ;
-}
-
-
 
 .features-container {
-  background-color: #e44a20;
-  margin: 1rem 0;
+  background-color:darkgrey;
   padding: 4rem 0;
   color: white;
 }
@@ -150,13 +166,12 @@ affiliations-container {
   overflow: hidden;
 }
 .feature-text {
-  width: 70%;
+  width: 85%;
   margin: 0 auto 2.5rem auto;
   color: white;
   font-size: 18px;
 }
 .iconcon {
-  width: 70%;
   margin: 10px auto 0 auto;
 }
 
@@ -176,19 +191,17 @@ affiliations-container {
 }
 
 .products-container{
-  padding-top: 4rem;
-  padding-bottom: 2.5rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   background-color: rgba(169, 169, 169, 0.1);
   color: black;
   font-weight: 500;
 }
 .iconcon1 {
-  width: 80%;
   margin: 1rem auto 0 auto;
-  
 }
 .product-icon-container{
-  margin-bottom: 2rem;
+  margin-bottom: 3%;
 
 }
 .product-icon{
@@ -210,7 +223,9 @@ affiliations-container {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .affiliations-container {
+    padding-bottom: 3rem;
+}
   .feature-icon-container,
   .product-icon-container,
   .col-4 {
@@ -225,5 +240,19 @@ affiliations-container {
   .affiliation-icon {
     width: 100%;
     height: auto;
+  }
+  .size-resmall{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .dotted-col.border-bottom,.dotted-col.border-right{
+    border: none !important;
+  }
+  .iconcon2{
+    margin: 0 !important;
+  }
+   .affiliation-icon{
+  margin-right: 15px !important;
+  width: 85% !important;
   }
 }

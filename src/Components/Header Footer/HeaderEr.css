@@ -170,28 +170,30 @@
   margin-right: 1rem; 
 }
 
-.banner-image {
-  display: flex;
-  justify-content: flex-end;
-  height: 100%; 
-}
-
-.banner-image img {
-  max-height: 100%; 
-  width: auto; 
-}
-
 @media (max-width: 463px) {
-  
-  .banner-image {
-    display: none; 
-  }
 
   .text-container-fluid {
     padding: 0 !important; 
     align-items: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer css */
@@ -206,39 +208,38 @@
 
 .footer-bottom hr {
   border-top: 1px solid #000;
-  width: 60%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .footer-links a, .copyrighttext {
   font-size: 0.9rem;
   font-weight: 500;
 }
-
-.footertext {
-  font-size: 0.9rem;
-  font-weight: 400;
+.social-icons {
+  height: 100%; 
+}
+.socialicon{
+  height: 100%;
+  max-height: 30px;
 }
 .separator {
   display: inline;
 }
 
-@media (max-width: 496px) {
+
+@media (max-width: 990px) {
   .footer {
     padding: 10px 3% !important;
     background-color: #f8f9fa;
   }
-  .horline {
+  .footer-bottom hr {
     width: 100% !important;
   }
   .footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .footertext {
-    font-size: 0.7rem;
-    margin: 10px;
-    font-weight: 400;
   }
   .footer-links a {
     font-size: 1rem !important;
@@ -247,45 +248,58 @@
   .copyrighttext {
     font-size: 1.1 rem;
     margin:10px;
+    margin-bottom: 1.1rem;
   }
   .separator {
     display: none;
   }
-
-
 }
-@media (max-width: 978px) {
+@media (min-width: 1078px) {
   .footer {
     padding: 10px 3% !important;
     background-color: #f8f9fa;
   }
   .footer-links a, .copyrighttext {
-    font-size:0.9rem;
-    font-weight: 500;
-  }
-  .footertext {
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
-  .horline {
-    width: 90%;
-  }
-
-}
-@media (min-width: 979px) {
-  .footer {
-    padding: 10px 3% !important;
-    background-color: #f8f9fa;
-  }
-  .footer-links a, .copyrighttext {
-    font-size:1.1rem;
+    font-size:1rem;
     font-weight: 500;
   }
   .footertext {
     font-size: 1rem;
     font-weight: 400;
   }
-  .horline {
-    width: 70%;
-  }
+ .footer-bottom hr{
+width: 100%;
+ }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
