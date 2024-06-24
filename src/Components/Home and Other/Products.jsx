@@ -5,59 +5,59 @@ import FooterEr from '../Header Footer/FooterEr';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Product.css'; 
 
-
 const products = [
   {
     image: "https://i.postimg.cc/BvFFStCd/white-label.png",
     title: "White-label Solutions Payment platform",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Our white-label solutions payment platform offers customizable payment processing services, tailored to meet your business needs seamlessly."
   },
   {
     image: "https://i.postimg.cc/TYTJtjch/api.png",
     title: "API Solutions",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Explore our API solutions designed to integrate smoothly with your existing systems, ensuring efficient and secure data exchange."
   },
   {
     image: "https://i.postimg.cc/vZk9w55r/upi.png",
     title: "UPI PAYIN",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "With UPI PAYIN, facilitate easy and instant payments through Unified Payments Interface, simplifying transactions for your customers."
   },
   {
     image: "https://i.postimg.cc/qMmyQPRZ/payouts.png",
     title: "Payouts",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Effortlessly manage payouts with our robust platform, ensuring timely disbursement of funds to beneficiaries with minimal effort."
   },
   {
     image: "https://i.postimg.cc/P5PZ7Svf/subscriptions.png",
     title: "Subscriptions",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Optimize customer retention with our subscription management services, handling recurring payments and enhancing user satisfaction."
   },
   {
     image: "https://i.postimg.cc/Rhdfk8Th/payment-link.png",
     title: "Payment link-based solutions",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Simplify payment collection with our payment link-based solutions, allowing you to generate secure payment links quickly and effortlessly."
   },
   {
     image: "https://i.postimg.cc/xTgyhks5/emi.png",
     title: "EMI's",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Offer flexible payment options with our EMI solutions, enabling customers to make purchases conveniently through installment plans."
   },
   {
     image: "https://i.postimg.cc/FKkyYThC/fraud.png",
     title: "FRM (Fraud Risk Module)",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Protect your transactions effectively with our Fraud Risk Module, leveraging advanced algorithms to detect and prevent fraudulent activities."
   },
   {
     image: "https://i.postimg.cc/QdygN2ZW/ertipay.png",
     title: "Ertipay BBPS",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Experience seamless bill payments with Ertipay BBPS, offering a reliable platform for handling utility bill payments with ease."
   },
   {
     image: "https://i.postimg.cc/XJw98XGw/loanzsimpl.png",
     title: "Loanzsimpl",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since"
+    description: "Streamline the lending process with Loanzsimpl, providing a user-friendly interface for managing loans and enhancing borrower experience."
   }
 ];
+
 
 function Products() {
   return (

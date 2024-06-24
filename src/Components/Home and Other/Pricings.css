@@ -1,14 +1,26 @@
 /* Pricings Styles */
 .card-price {
   height: auto !important;
+  border: 2px darkblue solid;
+  box-shadow: 25px 25px 25px rgba(64, 0, 255, 0.1);
+}
+.ml6 .text-wrapper {
+  position: relative;
 }
 
+.ml6 .letter {
+  display: inline-block;
+}
+.title-price{
+  margin: 70px 0;
+  font-weight: 700;
+}
 .card-svg {
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%); 
-  margin: -7% 0 0 -5%;
+  margin: -8% 0 0 -7%;
 }
 
 .list-group {
@@ -59,6 +71,19 @@
   }
 }
 
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.img-price{
+  width: 40%;
+  cursor: pointer;
+  margin: 30px 0 70px 0;
+}
 /* Contactus styles */
 .contactcon{
 padding: 10px 3% !important;
@@ -124,6 +149,11 @@ align-self: center;
     margin-top: 20px;
   align-self: center;
 }
+.img-price{
+  width: 70%;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
 }
 
 @media (max-width: 643px) {
@@ -145,4 +175,10 @@ align-self: center;
     .contact-input {
       max-width: 44%;
     }
+    }
+
+    @media(max-width:425px){
+      .title-price{
+        font-size: 18px;
+      }
     }
