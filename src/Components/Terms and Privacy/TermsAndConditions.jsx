@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 import HeaderEr from "../Header Footer/HeaderEr";
 import Banner from "../Header Footer/Banner";
 import FooterEr from "../Header Footer/FooterEr";
-import { FaHandPointRight } from "react-icons/fa";
+import { FaHandPointRight,FaRegHandPointRight } from "react-icons/fa";
 import "./Terms.css";
 
 function TermsAndConditions() {
@@ -155,40 +155,40 @@ function TermsAndConditions() {
 
             <h6 className="termtext">Account Registration:</h6>
             <p className="para">
-              a. Users are required to register an account with accurate and
+            <FaHandPointRight className="tpicon" /> Users are required to register an account with accurate and
               up-to-date information.
             </p>
             <p className="para">
-              b. Each user account is for individual use only and should not be
+            <FaHandPointRight className="tpicon" /> Each user account is for individual use only and should not be
               shared with others.
             </p>
 
             <h6 className="termtext">Security Measures:</h6>
             <p className="para">
-              a. Keep your account credentials, including username and password,
+            <FaHandPointRight className="tpicon" /> Keep your account credentials, including username and password,
               confidential at all times.
             </p>
             <p className="para">
-              b. Enable two-factor authentication for an added layer of
+            <FaHandPointRight className="tpicon" /> Enable two-factor authentication for an added layer of
               security.
             </p>
             <p className="para">
-              c. Report any unauthorized access or suspicious activity on your
+            <FaHandPointRight className="tpicon" /> Report any unauthorized access or suspicious activity on your
               account immediately to our customer support team.
             </p>
 
             <h6 className="termtext">Payment Transactions:</h6>
             <p className="para">
-              a. Ensure that all payment transactions initiated through our
+            <FaHandPointRight className="tpicon" /> Ensure that all payment transactions initiated through our
               platform are legitimate and authorized by you.
             </p>
             <p className="para">
-              b. Review transaction details carefully before confirming payment
+            <FaHandPointRight className="tpicon" /> Review transaction details carefully before confirming payment
               to avoid errors or discrepancies.
             </p>
-            <p className="para">c. Compliance with Laws and Regulations.</p>
+            <p className="para"><FaHandPointRight className="tpicon" /> Compliance with Laws and Regulations.</p>
             <p className="para">
-              d. Users are responsible for complying with all applicable laws
+            <FaHandPointRight className="tpicon" /> Users are responsible for complying with all applicable laws
               and regulations governing their use of our services, including but
               not limited to anti-money laundering (AML) and know your customer
               (KYC) requirements.
@@ -196,30 +196,30 @@ function TermsAndConditions() {
 
             <h6 className="termtext">Prohibited Activities:</h6>
             <p className="para">
-              a. The following activities are strictly prohibited on our
+            <FaHandPointRight className="tpicon" /> The following activities are strictly prohibited on our
               platform.
             </p>
             <p className="para">
-              b. Engaging in fraudulent or illegal transactions.
+              <FaHandPointRight className="tpicon" /> Engaging in fraudulent or illegal transactions.
             </p>
             <p className="para">
-              c. Using stolen or unauthorized payment information.
+              <FaHandPointRight className="tpicon" /> Using stolen or unauthorized payment information.
             </p>
             <p className="para">
-              d. Violating the intellectual property rights of others.
+              <FaHandPointRight className="tpicon" /> Violating the intellectual property rights of others.
             </p>
             <p className="para">
-              e. Any activity that may cause harm or disruption to our services
+              <FaHandPointRight className="tpicon" /> Any activity that may cause harm or disruption to our services
               or other users.
             </p>
 
             <h6 className="termtext">Data Privacy and Confidentiality:</h6>
             <p className="para">
-              a. We are committed to protecting your privacy and safeguarding
+              <FaHandPointRight className="tpicon" /> We are committed to protecting your privacy and safeguarding
               your personal information in accordance with our privacy policy.
             </p>
             <p className="para">
-              b. Users should refrain from sharing sensitive personal or
+              <FaHandPointRight className="tpicon" /> Users should refrain from sharing sensitive personal or
               financial information in public forums or through unsecured
               channels.
             </p>
@@ -631,24 +631,27 @@ function TermsAndConditions() {
               hold the merchant settlement till the Chargeback and dispute got
               resolve as per bank policies.
             </p>
-            <ul>
-              <li className="para">
+            <>
+              <p className="para">
+              <FaRegHandPointRight className="tpicon" style={{marginLeft:'30px'}}/> 
                 In the event of merchant not processing the refunds within
                 5-days, Ertitech shall initiate the refunds and it will be made
                 to the transaction originated bank account or card instrument
                 only,
-              </li>
-              <li className="para">
+              </p>
+              <p className="para">
+              <FaRegHandPointRight className="tpicon" style={{marginLeft:'30px'}}/> 
                 Ertitech shall have the rights to recover from the next
                 settlement to refund the disputed amount. Government taxes
                 cannot be refunded.
-              </li>
-              <li className="para">
+              </p>
+              <p className="para">
+              <FaRegHandPointRight className="tpicon" style={{marginLeft:'30px'}}/> 
                 If the recover amount is lesser that the actual refund amounts
                 then we shall raise a ‘debit note’ with respect to such amount
                 or shall settle the remaining in future settlement.
-              </li>
-            </ul>
+              </p>
+            </>
 
             <h5 className="termtext">Termination</h5>
             <p className="para">

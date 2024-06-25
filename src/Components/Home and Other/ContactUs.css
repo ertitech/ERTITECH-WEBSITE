@@ -1,0 +1,146 @@
+/* Contactus styles */
+.contactcon{
+    padding: 10px 3% !important;
+    }
+    
+    .contact-text-brick-red {
+      color: #e44a20;
+    }
+    .contact-heading{
+    color: white;
+    text-align: start;
+    margin-bottom: 20px;
+    }
+    .conemail,.conno{
+      text-decoration: none;
+    }
+    
+    .contact-btn-brick-red {
+      border:2px solid #e44a20;
+      color: 'rgba(0,0,0,0.7)';
+      background-color: white;
+      font-weight: 500;
+    }
+    
+    .contact-btn-brick-red:hover {
+      border:2px solid #6ec13a;
+      color: 'rgba(0,0,0,0.7)';
+      background-color: white;
+      font-weight: 500;
+    }
+    
+    .contact-input {
+      margin-bottom: 1rem;
+      max-width: 46%;
+      border: 1px solid black;
+    }
+    .contact-input1 {
+      margin-bottom: 1rem;
+      border: 1px solid black;
+      max-width: 100%;
+    }
+    .contact-text {
+      font-size: 1.14rem; 
+    }
+    .contact-card{
+    margin-left: 40px;
+    }
+    @media (min-width: 1370px) and (max-width: 1750px) {
+      .leavemsgcon {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    
+      .contact-card {
+        max-width: 80%;
+        margin: 20px 0 0 auto; /* Align to the end horizontally */
+      }}
+    
+    @media (max-width: 991px) {
+      .leavemsgcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .contact-card {
+        max-width: 70%;
+        margin: 20px auto 0; /* This centers the card horizontally */
+      }
+      
+      }
+    @media (max-width: 768px) {
+      .leavemsgcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    .contact-card{
+      max-width: 85%;
+        margin: 20px auto 0;
+    }
+    .img-price{
+      width: 70%;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+    }
+    
+    @media (max-width: 643px) {
+      .leavemsgcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact-card{
+        max-width: 90%;
+        margin: 20px auto 0;
+      }
+      }
+    
+      @media (max-width: 520px) {
+        .contact-card{
+          max-width: 100%;
+          margin-left: 0;
+          margin-top: 20px;
+          align-self: center;
+        }
+        .contact-input {
+          max-width: 44%;
+        }
+        }
+    
+        @media(max-width:425px){
+          .title-price{
+            font-size: 18px;
+          }
+          .contact-input {
+            max-width: 40%;
+          }
+        }
+
+        /* Additional Section Styles */
+.team-member {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  max-width: 40%;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.title1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.meetpara {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}

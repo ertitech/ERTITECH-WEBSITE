@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './ContactUs.css'
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -111,8 +112,8 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="col-lg-6 col-12 d-flex justify-content-center">
-          <div
+          <div className="col-lg-6 col-12 d-flex justify-content-center leavemsgcon">
+            <div
               className="card h-100 p-4 contact-card"
               style={{
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
@@ -196,7 +197,46 @@ function ContactUs() {
             </div>
           </div>
         </div>
+
+        {/* Additional Sections */}
+        <div className="row">
+          <div className="team-member mb-4 d-flex">
+            <div className="icon">
+              <img
+                src="https://i.postimg.cc/4d9vN7c6/registered-address.png"
+                alt="Registered Address"
+                className="img-fluid"
+              />
+            </div>
+            <div className="text">
+              <div className="title1">Registered Address</div>
+              <p className="meetpara">
+                Erittech Solutions Pvt Ltd, No-7, G1, Bharathiyar Street, Prashanti Nagar, Chromepet, Chennai – 600 044, Tamilnadu, India.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="team-member d-flex">
+            <div className="icon">
+              <img
+                src="https://i.postimg.cc/XN5xnhKR/headquarters.png"
+                alt="Business Headquarters"
+                className="img-fluid"
+              />
+            </div>
+            <div className="text">
+              <div className="title1">Business Headquarters</div>
+              <p className="meetpara">
+                Erittech Solutions Pvt Ltd, Old.no.111, New.no.525, Radha Towers, 2nd Floor, Narayanapillai Street, Salem – 636 007, Tamilnadu, India.
+              </p>
+              <p className="meetpara" style={{ fontWeight: 500 }}>CIN - U72900TN2022PTC148971</p>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* End of Additional Sections */}
+
       <FooterEr />
       <ToastContainer />
     </>

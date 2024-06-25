@@ -7,10 +7,12 @@ import Products from "./Components/Home and Other/Products";
 import Pricings from "./Components/Home and Other/Pricings";
 import TermsAndConditions from "./Components/Terms and Privacy/TermsAndConditions";
 import PrivacyPolicy from "./Components/Terms and Privacy/PrivacyPolicy";
+import useScrollToTop from "./Components/Header Footer/ScrollTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTopWrapper>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path="/AboutUs" element={<AboutUs />} />
@@ -20,9 +22,14 @@ function App() {
           <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
+      </ScrollToTopWrapper>
     </Router>
   );
 }
 
+const ScrollToTopWrapper = ({ children }) => {
+  useScrollToTop();
+  return children;
+};
 
 export default App;

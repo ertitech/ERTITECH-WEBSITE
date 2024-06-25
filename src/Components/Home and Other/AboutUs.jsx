@@ -60,10 +60,7 @@ function AboutUs() {
           />
         </div>
 
-        <div
-          className="col-md-6 order-md-1 d-flex flex-column justify-content-center px-5 mx-auto"
-          style={{ maxWidth: "45%", color: "white" }}
-        >
+        <div className="col-md-6 order-md-1 text-content d-flex flex-column justify-content-center px-5 mx-auto">
           <h3>
             Payment{" "}
             <span className="fw-bold text-decoration-underline">
@@ -82,10 +79,7 @@ function AboutUs() {
       </div>
 
       <div className="row securitycon w-100 m-0">
-        <div
-          className="col-md-6 d-flex flex-column justify-content-center px-5 mx-auto"
-          style={{ width: "40%", color: "white" }}
-        >
+        <div className="col-md-6 text-content d-flex flex-column justify-content-center px-5 mx-auto">
           <h3>
             Security{" "}
             <span className="fw-bold text-decoration-underline">Protocols</span>
@@ -109,20 +103,15 @@ function AboutUs() {
         </div>
       </div>
 
-
       <div className="row joincon w-100 m-0 px-5">
-        <div className="col-md-4 py-5 ps-5 d-flex justify-content-start">
+        <div className="col-md-4 d-flex justify-content-start joinimgcon">
           <img
             src="https://i.postimg.cc/JhCFbc66/join-us-icon.png"
             alt="Join Us Icon"
-            className="img-fluid"
-            style={{ objectFit: "cover" ,maxWidth:'70%'}}
+            className="img-fluid joinimg"
           />
         </div>
-        <div
-          className="col-md-8 py-5 pe-5 d-flex flex-column justify-content-center "
-          style={{ color: "black", fontWeight: "500" }}
-        >
+        <div className="col-md-8 text-content py-5 d-flex flex-column justify-content-center">
           <p>
             Join the ranks of industry-leading enterprises that rely on Ertitech
             for their payment processing needs and witness the distinction
@@ -136,16 +125,16 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="row my-5 py-5">
-        <div className="col-md-4 ps-5">
+
+      <div className="row my-5 p-5 mx-0">
+        <div className="col-md-4 founderimgcon ">
           <img
             src="https://i.postimg.cc/6391P6NC/founder.png"
             alt="Founder"
-            className="img-fluid ps-5"
-            style={{ height: "100%", width: "100%" }}
+            className="img-fluid founderimg"
           />
         </div>
-        <div className="col-md-8 d-flex flex-column justify-content-center pe-5">
+        <div className="col-md-8 d-flex flex-column justify-content-center founderextcon">
           <h3>
             Our{" "}
             <span

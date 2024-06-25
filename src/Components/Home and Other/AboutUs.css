@@ -1,14 +1,12 @@
 /* Default styles */
-
 .about-us {
   padding: 10px 3% !important;
-  height: 350px;
 }
 
-
-.aboutheading{
+.aboutheading {
   align-items: start;
 }
+
 .about-us .section-title {
   color: #e44a20;
   font-weight: 600;
@@ -28,114 +26,200 @@
   align-self: center;
 }
 
-.paymentcon{
+.paymentcon {
   background-color: #90498c;
 }
-.securitycon{
+
+.securitycon {
   background-color: #3b6687;
 }
-.joincon{
+
+.joincon {
   background-color: #d6e121;
 }
 
-
-
-/* Media Queries */
- 
-@media (min-width: 1600px) {
-  .about-us {
-    padding: 10px 3% !important;
-    height: 550px;
-  }
-  .about-us .blueimg {
-    width: 50%;
-  }
+.paymentcon .text-content,
+.securitycon .text-content {
+  width: 40%;
+  color: white;
+  margin: 0 auto;
+  padding: 15px;
 }
+.joinimgcon {
+  padding: 5rem 0 5rem 2rem; 
+}
+.jointextcon{
+  padding: 5rem 2rem 5rem 0;
+}
+.joincon .text-content {
+  color: black;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.joinimg {
+  object-fit: cover;
+  max-width: 70%;
+}
+.founderimg{
+  height: "100%";
+   width: "100%" ;
+}
+
 @media (max-width: 1200px) {
   .about-us {
     padding: 10px 3% !important;
-    height: 450px;
   }
-  .about-us .blueimg {
-    width: 70%;
+  .joinimg {
+    max-width: 80%;
   }
 }
+
 @media (max-width: 992px) {
   .about-us {
     padding: 10px 3% !important;
-    height: 500px;
   }
-  .about-us .blueimg {
-    width: 80%;
+  .joinimg {
+    max-width: 100%;
+    max-height: 80%;
+    margin: auto; 
+  }
+  .joinimgcon {
+    padding: 3rem 0 3rem 3rem; 
+  }
+  .jointextcon{
+    padding: 3rem 3rem 3rem 0;
   }
 }
 
-@media (min-width: 540px )and (max-width: 768px) {
-
+@media (max-width: 768px) {
   .about-us {
-    height: auto;
+    padding: 10px 5%;
   }
-  .about-us .blueimg {
-    margin-top: 5%;
-    width: 50%;
-  }
+
   .about-us .section-content {
     padding: 10px;
   }
-
-}
-
-@media (max-width: 539px) {
-  .about-us {
-    height: auto;
+  .joinimgcon {
+    display: none;
   }
-  .about-us .blueimg {
-    margin-top: 5%;
-    width: 50%;
+  .joincon img,
+  .about-us img,
+  .paymentcon img,
+  .securitycon img {
+    display: none;
+  }
+
+  .about-us,
+  .paymentcon,
+  .securitycon,
+  .joincon {
+    flex-direction: column;
+  }
+
+  .about-us .section-content {
+    text-align: center;
+  }
+
+  .aboutheading {
+    margin-bottom: 20px;
+  }
+
+  .paymentcon .text-content,
+  .securitycon .text-content {
+    max-width: 90%;
+    width: 100%;
+    text-align: center; 
+  }
+  .joinimgcon {
+    padding: 0; 
+}
+  .joincon .text-content {
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center; 
+  }
+  .founderimgcon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   
+  .founderimg {
+    max-width: 50%;
+  }
+  
+  .founderextcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .founderextcon h3 {
+    margin-bottom: 10px; 
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .about-us {
+    padding: 10px;
+  }
+
   .about-us .section-content {
     text-align: center;
     padding: 10px;
   }
+  .founderimg {
+    max-width: 100%;
+  }
+  .paymentcon .text-content,
+  .securitycon .text-content,
+  .joincon .text-content {
+    padding: 25px;
+    max-width: 100%;
+    width: 100%;
+  }
 
+  .testimonial-banner .testimonial-content {
+    padding: 10px;
+  }
+  .testimonial-image img {
+    max-height: 200px; /* Adjust the height as needed */
+  }
 }
 
-
-
-
-
 .testimonial-banner {
-background-color: #032b47;
-color: #ffffff;
-padding: 20px;
-border-radius: 10px;
+  background-color: #032b47;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .testimonial-image img {
-border: 5px solid #cde01a;
+  border: 5px solid #cde01a;
 }
 
 .testimonial-content {
-position: relative;
+  position: relative;
 }
 
 .testimonial-content .highlight {
-color: #cde01a;
+  color: #cde01a;
 }
 
 .testimonial-text {
-font-size: 1.2em;
-margin: 20px 0;
+  font-size: 1.2em;
+  margin: 20px 0;
 }
 
 .client-name {
-font-weight: bold;
-/* text-align: right; */
+  font-weight: bold;
 }
 
 .testimonial-content .fas {
-font-size: 1.5em;
-color: #cde01a;
-
+  font-size: 1.5em;
+  color: #cde01a;
 }
