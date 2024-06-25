@@ -73,6 +73,29 @@ const Home = () => {
     setHoveredIndex(null);
   };
 
+  const [animationClass, setAnimationClass] = useState('');
+  const [imageAnimationClass, setImageAnimationClass] = useState('image-fade-in-scale');
+
+  useEffect(() => {
+    setAnimationClass('keyword-animation');
+
+    const timer = setTimeout(() => {
+      setAnimationClass('');
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [keyword]);
+
+  useEffect(() => {
+    setImageAnimationClass('image-fade-out-scale');
+
+    const timer = setTimeout(() => {
+      setImageAnimationClass('image-fade-in-scale');
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [image]);
+
   const products = [
     { img: "https://i.postimg.cc/tgpkvf5x/api.png", text: "API Solutions" },
     { img: "https://i.postimg.cc/W3f734PG/emi.png", text: "EMI’s" },
@@ -126,7 +149,9 @@ const Home = () => {
             <div className="text-wrapper">
               <h2 className="font-md-small">
                 Streamlining Payments - Ertitech's Unified Interface <br />
-                <span style={{ color: "red" }}>for {keyword}</span>
+                <span className={animationClass} style={{ color: 'red' }}>
+                  for {keyword}
+                </span>
               </h2>
               <p className="fst-italic mt-md-5 fs-5 size-small">
                 Robust Security Measures Safeguarding Sensitive Payment Data
@@ -138,12 +163,25 @@ const Home = () => {
             <img
               src={image}
               alt={`${keyword}-banner`}
-              style={{ width: "65%", height: "auto" }}
+              style={{ width: '65%', height: 'auto' }}
+              className={imageAnimationClass}
             />
           </div>
         </section>
       </div>
-      <section style={{ height: "400px" }}></section>
+      <section className="gif-container" style={{ height: "400px" }}>
+        <h3 className="text-center mb-lg-5 mb-md-3 mb-sm-2 fw-bolder">
+          Ertitech <span style={{color:'#e44a20'}}>Smart Routing Solutions</span>
+        </h3>
+  <div className="d-flex h-100">
+    <img 
+      src="./ertitech smart.gif" 
+      alt="" 
+      className="mx-auto" 
+      style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }} 
+    />
+  </div>
+</section>
       <section className="features-container">
         <h3 className="text-center whyerti1">
           Why <span className="whyerti2">Ertitech ?</span>
