@@ -10,6 +10,6 @@ const Banner = ({ title, belowText }) => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Banner;
