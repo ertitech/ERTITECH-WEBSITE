@@ -3,11 +3,12 @@ name: Deploy to AWS S3
 on:
   push:
     branches:
-      - main  # Set your main branch name here
+      - main  # Adjust to your branch name if necessary
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment: s3-aws  # Make sure this matches the environment name where secrets are defined
 
     steps:
       - name: Checkout code
@@ -25,9 +26,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to AWS S3
-        run: |
-          aws s3 sync ./dist s3://ertitech.com --delete
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ap-south-1
+          AWS_DEFAULT_REGION: ap-south-1 
+        run: |
+          aws s3 sync ./dist s3://ertitech.com --delete
