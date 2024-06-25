@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import './ContactUs.css'
+import "./ContactUs.css";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -67,10 +67,7 @@ function ContactUs() {
   return (
     <>
       <HeaderEr />
-      <Banner
-        title="Contact Us"
-        belowText="Home &gt; Contact Informations"
-      />
+      <Banner title="Contact Us" belowText="Home &gt; Contact Informations" />
       <div className="contactcon container-fluid my-5">
         <div className="row align-items-center mx-4">
           <div className="col-lg-6 col-12 mb-4">
@@ -83,7 +80,9 @@ function ContactUs() {
             <p className="contact-text text-center text-md-center text-lg-start">
               (Monday-Friday; 10am – 6pm local timings)
             </p>
-            <p className="contact-text text-center text-md-center text-lg-start">              Send us an Email -{" "}
+            <p className="contact-text text-center text-md-center text-lg-start">
+              {" "}
+              Send us an Email -{" "}
               <a
                 className="contact-text-brick-red conemail"
                 style={{ fontWeight: "500" }}
@@ -197,45 +196,47 @@ function ContactUs() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Additional Sections */}
-        <div className="row">
-          <div className="team-member mb-4 d-flex">
-            <div className="icon">
+      <div className="address-container my-5 mx-2">
+        <div className="row m-0 w-100">
+          <div className="column">
+            <div className="address-item">
               <img
                 src="https://i.postimg.cc/4d9vN7c6/registered-address.png"
-                alt="Registered Address"
-                className="img-fluid"
+                alt="Registered Address Icon"
+                className="address-icon"
               />
-            </div>
-            <div className="text">
-              <div className="title1">Registered Address</div>
-              <p className="meetpara">
-                Erittech Solutions Pvt Ltd, No-7, G1, Bharathiyar Street, Prashanti Nagar, Chromepet, Chennai – 600 044, Tamilnadu, India.
-              </p>
+              <div className="address-text">
+                <h3>Registered Address</h3>
+                <p>
+                  Ertitech Solutions Pvt Ltd, No-7, G1, Bharathiyar Street,
+                  Prashanti Nagar, Chromepet, Chennai – 600 044, Tamilnadu,
+                  India.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="team-member d-flex">
-            <div className="icon">
+          <div className="column">
+            <div className="address-item">
               <img
                 src="https://i.postimg.cc/XN5xnhKR/headquarters.png"
-                alt="Business Headquarters"
-                className="img-fluid"
+                alt="Business Headquarters Icon"
+                className="address-icon"
               />
-            </div>
-            <div className="text">
-              <div className="title1">Business Headquarters</div>
-              <p className="meetpara">
-                Erittech Solutions Pvt Ltd, Old.no.111, New.no.525, Radha Towers, 2nd Floor, Narayanapillai Street, Salem – 636 007, Tamilnadu, India.
-              </p>
-              <p className="meetpara" style={{ fontWeight: 500 }}>CIN - U72900TN2022PTC148971</p>
+              <div className="address-text">
+                <h3>Business Headquarters</h3>
+                <p>
+                  Ertitech Solutions Pvt Ltd, Old.no.111, New.no.525, Radha
+                  Towers, 2nd Floor, Narayanapillai Street, Salem – 636 007,
+                  Tamilnadu, India.
+                </p>
+                <p style={{ fontWeight: "500" }}>CIN - U72900TN2022PTC148971</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* End of Additional Sections */}
 
       <FooterEr />
       <ToastContainer />
