@@ -47,7 +47,15 @@
   margin-top: -30px;
  }
 }
-
+/* #payment-gradient{
+  stop-color: #783eda;
+}
+#payment-gradient + stop {
+  stop-color: #2986e9;
+} */
+.payment-mode-svg path {
+  fill: url(#payment-gradient);
+}
 .path-0{
   animation:pathAnim-0 4s;
   animation-timing-function: linear;

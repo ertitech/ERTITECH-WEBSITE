@@ -128,7 +128,7 @@ function Pricings() {
               <div className="card card-price">
                 <div className="card-body">
                   <div className="card-svg">
-                    <h5 className="title">PAYMENT MODE</h5>
+                    <h5 className="title" >PAYMENT MODE</h5>
                     <svg
                       width="180%"
                       height="200%"
@@ -137,22 +137,20 @@ function Pricings() {
                       className="transition duration-300 ease-in-out delay-150"
                     >
                       <defs>
-                        <linearGradient
-                          id="gradient"
-                          x1="29%"
-                          y1="5%"
-                          x2="71%"
-                          y2="95%"
-                        >
-                          <stop offset="5%" stopColor="#0693e3"></stop>
-                          <stop offset="95%" stopColor="#9900ef"></stop>
-                        </linearGradient>
+                      <linearGradient id="payment-gradient"  
+                        x1="29%"
+                        y1="5%"
+                        x2="71%"
+                        y2="95%">
+                        <stop offset="0%" style={{ stopColor: 'orange' }} />
+                        <stop offset="100%" style={{ stopColor: 'red' }} />
+                      </linearGradient>
                       </defs>
                       <path
                         d="M 0,500 L 0,187 C 92.98717948717947,175.05897435897435 185.97435897435895,163.11794871794874 261,181 C 336.02564102564105,198.88205128205126 393.08974358974365,246.58717948717947 476,259 C 558.9102564102564,271.41282051282053 667.6666666666666,248.53333333333336 742,250 C 816.3333333333334,251.46666666666664 856.24358974359,277.2794871794872 936,262 C 1015.75641025641,246.7205128205128 1135.3589743589741,190.34871794871793 1226,171 C 1316.6410256410259,151.65128205128207 1378.320512820513,169.32564102564103 1440,187 L 1440,500 L 0,500 Z"
                         stroke="none"
                         strokeWidth="0"
-                        fill="url(#gradient)"
+                        fill="url(#payment-gradient)"
                         fillOpacity="1"
                         className="transition-all duration-300 ease-in-out delay-150 path-0"
                         transform="rotate(-180 720 250)"
