@@ -229,3 +229,25 @@
     font-size: 14px;
   }
 }
+@media (max-width: 375px) {
+  .card {
+    height: 270px;
+    width: 100%;
+  }
+
+  .card-img-left {
+    width: 32%;
+    left: 4%;
+  }
+  .title-container {
+    height: 50px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+  .card-text {
+    height: 220px;
+    font-size: 14px;
+  }
+}
