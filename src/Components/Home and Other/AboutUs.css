@@ -42,7 +42,8 @@
 .securitycon .text-content {
   width: 40%;
   color: white;
-  margin: 0 auto;
+    text-align: justify;
+    margin: 0 auto;
   padding: 15px;
 }
 .joinimgcon {
@@ -52,7 +53,8 @@
   padding: 5rem 2rem 5rem 0;
 }
 .joincon .text-content {
-  color: black;
+    text-align: justify;
+    color: black;
   font-weight: 500;
   padding: 15px;
 }
@@ -64,6 +66,13 @@
 .founderimg{
   height: "100%";
    width: "100%" ;
+}
+.founderextcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: justify; 
 }
 
 @media (max-width: 1200px) {
@@ -118,7 +127,7 @@
   }
 
   .about-us .section-content {
-    text-align: center;
+    text-align: justify;
   }
 
   .aboutheading {
@@ -129,7 +138,7 @@
   .securitycon .text-content {
     max-width: 90%;
     width: 100%;
-    text-align: center; 
+    text-align: justify; 
   }
   .joinimgcon {
     padding: 0; 
@@ -137,7 +146,7 @@
   .joincon .text-content {
     width: 100%;
     margin: 0 auto; 
-    text-align: center; 
+    text-align: justify; 
   }
   .founderimgcon {
     display: flex;
@@ -154,7 +163,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    text-align: center; 
+    text-align: justify; 
   }
   
   .founderextcon h3 {
@@ -169,25 +178,27 @@
   }
 
   .about-us .section-content {
-    text-align: center;
+    text-align: justify;
     padding: 10px;
   }
   .founderimg {
     max-width: 100%;
   }
   .paymentcon .text-content,
+  .founderextcon,
   .securitycon .text-content,
   .joincon .text-content {
     padding: 25px;
     max-width: 100%;
     width: 100%;
+    text-align: justify;
   }
 
   .testimonial-banner .testimonial-content {
     padding: 10px;
   }
   .testimonial-image img {
-    max-height: 200px; /* Adjust the height as needed */
+    max-height: 200px;
   }
 }
 
@@ -213,6 +224,7 @@
 .testimonial-text {
   font-size: 1.2em;
   margin: 20px 0;
+  text-align: justify;
 }
 
 .client-name {
