@@ -61,7 +61,7 @@ function AboutUs() {
         </div>
 
         <div className="col-md-6 order-md-1 text-content d-flex flex-column justify-content-center px-5 mx-auto">
-          <h3>
+          <h3 className="mb-3">
             Payment{" "}
             <span className="fw-bold text-decoration-underline">
               Orchestration
@@ -80,7 +80,7 @@ function AboutUs() {
 
       <div className="row securitycon w-100 m-0">
         <div className="col-md-6 text-content d-flex flex-column justify-content-center px-5 mx-auto">
-          <h3>
+          <h3 className="mb-3">
             Security{" "}
             <span className="fw-bold text-decoration-underline">Protocols</span>
           </h3>
@@ -152,7 +152,7 @@ function AboutUs() {
         </div>
       </div>
 
-      <div className="testimonial-banner container-fluid">
+      {/* <div className="testimonial-banner container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-4 col-md-5 col-sm-12 text-center">
             <div className="testimonial-image">
@@ -179,7 +179,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <FooterEr />
     </>

@@ -55,7 +55,7 @@ const Home = () => {
       img: "https://i.postimg.cc/VvG2zwKp/safe-and-secure.png",
       text: "Safe & Secure",
     },
-    { img: "https://i.postimg.cc/v83Jr7Gh/assure-pay.png", text: "Assure Pay" },
+    { img: "https://i.postimg.cc/v83Jr7Gh/assure-pay.png", text: "Reliable" },
     { img: "https://i.postimg.cc/9F0vJ4Mh/support.png", text: "Support" },
     {
       img: "https://i.postimg.cc/wTrnP6ys/user-friendly.png",

@@ -29,23 +29,25 @@ const FooterEr = () => {
 
           <div className="col-lg-6 ">
             <div className="footer-links text-center mb-3">
-              <Link to="/ContactUs" className="text-dark mx-2">
-                Contact Us
-              </Link>
-              <span className="separator text-dark mx-2">|</span>
               <Link to="/TermsAndConditions" className="text-dark mx-2">
                 Terms & Conditions
               </Link>
-              <span className="separator text-dark mx-2">|</span>
-              <Link to="/PrivacyPolicy" className="text-dark mx-2">
+            <span className="separator text-dark mx-2">|</span>
+
+            <Link to="/PrivacyPolicy" className="text-dark mx-2">
                 Privacy Policy
               </Link>
+              <span className="separator text-dark mx-2">|</span>
+              <Link to="/ContactUs" className="text-dark mx-2">
+                Contact Us
+              </Link>
+              
             </div>
             <div className="footer-bottom text-center">
               <hr className="mb-3 footer-bottom" />
 
               <p className="text-dark text-center copyrighttext">
-                &copy; 2022 Ertitech Solutions Pvt Ltd, All Rights Reserved
+                &copy; 2024 Ertitech Solutions Pvt Ltd, All Rights Reserved
               </p>
             </div>
           </div>
