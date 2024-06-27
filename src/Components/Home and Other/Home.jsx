@@ -165,6 +165,7 @@ const Home = () => {
               alt={`${keyword}-banner`}
               style={{ width: '65%', height: 'auto' }}
               className={imageAnimationClass}
+              loading="lazy"
             />
           </div>
         </section>
@@ -178,7 +179,8 @@ const Home = () => {
       src="./ertitech smart.gif" 
       alt="" 
       className="mx-auto" 
-      style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }} 
+      style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }}
+      loading="lazy" 
     />
   </div>
 </section>
@@ -205,12 +207,14 @@ const Home = () => {
                   alt={feature.text}
                   className="feature-icon"
                   style={{ display: hoveredIndex === index ? "none" : "block" }}
+                   loading="lazy"
                 />
                 <img
                   src={gifPaths[index]}
                   alt={feature.text}
                   className="feature-gif"
                   style={{ display: hoveredIndex === index ? "block" : "none" }}
+                   loading="lazy"
                 />
               </div>
               <p className="featurecaption">{feature.text}</p>
@@ -241,6 +245,7 @@ const Home = () => {
                 src={product.img}
                 alt={product.text}
                 className="product-icon"
+                 loading="lazy"
               />
               <p className="size-resmall">{product.text}</p>
             </div>
@@ -267,6 +272,7 @@ const Home = () => {
                   src={affiliation}
                   alt={`Affiliation ${index + 1}`}
                   className="affiliation-icon"
+                   loading="lazy"
                 />
               </div>
             </div>
