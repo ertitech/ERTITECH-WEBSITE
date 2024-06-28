@@ -5,6 +5,7 @@ import HeaderEr from "../Header Footer/HeaderEr";
 import FooterEr from "../Header Footer/FooterEr";
 import Banner from "../Header Footer/Banner";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 function Pricings() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
@@ -109,6 +110,17 @@ function Pricings() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - Pricings</title>
+        <meta
+          name="description"
+          content="Explore ERTITECH's pricing information for our technology solutions. Find pricing details for our services and products."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, pricings, pricing information, technology solutions, services, products"
+        />
+      </Helmet>
       <Banner
         title="Pricings"
         belowText="Home &gt;Pricings Informations"

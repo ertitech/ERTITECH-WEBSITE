@@ -5,12 +5,24 @@ import Banner from '../Header Footer/Banner';
 import { FaHandPointRight } from "react-icons/fa";
 import FooterEr from '../Header Footer/FooterEr';
 import './Terms.css'
+import { Helmet } from 'react-helmet';
 
 
 function PrivacyPolicy() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - Privacy Policy</title>
+        <meta
+          name="description"
+          content="ERTITECH respects your privacy. Read our privacy policy to understand how we collect, use, and protect your personal information."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, privacy policy, data protection, personal information, GDPR"
+        />
+      </Helmet>
       <Banner
         title="Privacy Policy"
         belowText="Home &gt; Privacy Policy Informations"

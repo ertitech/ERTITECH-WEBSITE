@@ -6,6 +6,7 @@ import gif1 from "/gif1.gif";
 import gif2 from "/gif2.gif";
 import gif3 from "/gif3.gif";
 import gif4 from "/gif4.gif";
+import { Helmet } from 'react-helmet';
 
 const contentData = [
   {
@@ -142,6 +143,17 @@ const Home = () => {
   return (
     <div className="container-f">
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - Home</title>
+        <meta
+          name="description"
+          content="ERTITECH offers a range of services including BBPS bill payments,LoanzSimpl app, loans, payouts, and merchant QR solutions. Explore how our innovative solutions can transform your business."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, BBPS bill payments, Simpl app, loans, payouts, merchant QR solutions, technology solutions, business transformation"
+        />
+      </Helmet>
       <div className="home-banner">
         <div className="background-shapes"></div>
         <section className="home-con">

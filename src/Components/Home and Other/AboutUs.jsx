@@ -4,11 +4,23 @@ import "./AboutUs.css";
 import Banner from "../Header Footer/Banner";
 import HeaderEr from "../Header Footer/HeaderEr";
 import FooterEr from "../Header Footer/FooterEr";
-
+import { Helmet } from 'react-helmet';
 function AboutUs() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - About Us</title>
+        <meta
+          name="description"
+          content="Learn about ERTITECH, a leading provider of technology solutions. Discover our company's history, mission, and values."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, about us, company history, technology solutions, mission, values"
+        />
+      </Helmet>
+
       <Banner title="About Us" belowText="Home &gt; Our Informations" />
       <div className="about-us my-5 container-fluid section-content d-flex flex-wrap align-items-center p-0">
         <h3 className="mb-4 aboutheading text-center mx-auto">

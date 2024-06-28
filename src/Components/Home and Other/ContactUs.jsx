@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./ContactUs.css";
-
+import { Helmet } from 'react-helmet';
 function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
@@ -67,6 +67,17 @@ function ContactUs() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH-Contact</title>
+        <meta
+          name="description"
+          content="ERTITECH is a leading provider of technology solutions. Contact us for inquiries about our services and products."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, contact, technology solutions, services, products"
+        />
+      </Helmet>
       <Banner title="Contact Us" belowText="Home &gt; Contact Informations" />
       <div className="contactcon container-fluid my-5">
         <div className="row align-items-center mx-4">

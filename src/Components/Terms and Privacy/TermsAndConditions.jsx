@@ -5,11 +5,22 @@ import Banner from "../Header Footer/Banner";
 import FooterEr from "../Header Footer/FooterEr";
 import { FaHandPointRight,FaRegHandPointRight } from "react-icons/fa";
 import "./Terms.css";
-
+import { Helmet } from 'react-helmet';
 function TermsAndConditions() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - Terms and Conditions</title>
+        <meta
+          name="description"
+          content="Read ERTITECH's terms and conditions for using our website and services. Understand your rights and obligations when interacting with ERTITECH."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, terms and conditions, website terms, service terms, user agreement"
+        />
+      </Helmet>
       <Banner
         title="Terms & Conditions"
         belowText="Home &gt; T&C Informations"

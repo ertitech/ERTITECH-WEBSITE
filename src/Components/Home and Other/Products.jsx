@@ -4,6 +4,7 @@ import Banner from '../Header Footer/Banner';
 import FooterEr from '../Header Footer/FooterEr';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Product.css'; 
+import { Helmet } from 'react-helmet';
 
 const products = [
   {
@@ -63,6 +64,17 @@ function Products() {
   return (
     <>
       <HeaderEr />
+      <Helmet>
+        <title>ERTITECH - Products</title>
+        <meta
+          name="description"
+          content="Explore ERTITECH's range of technology products. Discover our innovative solutions designed to meet your business needs."
+        />
+        <meta
+          name="keywords"
+          content="ERTITECH, products, technology products, business solutions, innovation"
+        />
+      </Helmet>
       <Banner
         title="Products"
         belowText="Home &gt; Product Informations"
