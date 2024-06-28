@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Navigate } from "react-router-dom";
 import ContactUs from "./Components/Home and Other/ContactUs";
 import Home from "./Components/Home and Other/Home";
 import AboutUs from "./Components/Home and Other/AboutUs";
@@ -14,13 +14,15 @@ function App() {
     <Router>
       <ScrollToTopWrapper>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Home />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Pricings" element={<Pricings />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          {/* Catch-all route to redirect to the root path */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </ScrollToTopWrapper>
     </Router>
